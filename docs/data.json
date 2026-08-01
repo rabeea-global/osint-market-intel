@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-01T19:48:58Z",
+  "generated_utc": "2026-08-01T20:26:12Z",
   "assets": [
     {
       "name": "Copper",
@@ -19,8 +19,8 @@
       "state": "BUY",
       "state_ar": "شراء",
       "strength": 47,
-      "rationale": "MACD > signal; RSI 57.07; OSINT supply pressure +5 (raises conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 57.07؛ ضغط لوجستي على العرض +5 (يعزّز القناعة)",
+      "rationale": "MACD > signal; RSI 57.07; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 57.07؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
           "2026-05-06",
@@ -332,7 +332,8 @@
           57.57,
           57.07
         ]
-      }
+      },
+      "intel_pressure": 6.0
     },
     {
       "name": "Natural Gas",
@@ -352,8 +353,8 @@
       "state": "SELL",
       "state_ar": "بيع",
       "strength": 44,
-      "rationale": "MACD < signal; RSI 37.62; ⚠ OSINT supply pressure +5 conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 37.62؛ ⚠ ضغط لوجستي على العرض +5 يتعارض مع إشارة البيع",
+      "rationale": "MACD < signal; RSI 37.62; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 37.62؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
           "2026-05-06",
@@ -665,13 +666,26 @@
           38.16,
           37.62
         ]
-      }
+      },
+      "intel_pressure": 6.0
     }
   ],
   "osint": {
-    "alert_count": 7,
-    "supply_pressure": 5,
+    "alert_count": 8,
+    "supply_pressure": 6,
+    "ai_enabled": false,
+    "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Yemen’s Houthis Deny Plans To Impose Fees On Ships Sailing Through Red Sea",
+        "link": "https://gcaptain.com/yemens-houthis-deny-plans-to-impose-fees-on-ships-sailing-through-red-sea/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-08-01 18:19",
+        "supply": true
+      },
       {
         "title": "GasLog LNG Carrier Damaged Exiting Hormuz as UKMTO Reports Two New Attacks",
         "link": "https://gcaptain.com/gaslog-lng-carrier-damaged-exiting-hormuz-as-ukmto-reports-two-new-attacks/",
