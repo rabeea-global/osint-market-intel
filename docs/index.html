@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OSINT Market Terminal — النحاس والغاز</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#131822; --panel2:#0f141d; --border:#232a36;
+    --text:#c9d1d9; --muted:#7d8694; --dim:#4a525f;
+    --copper:#c87941; --gas:#3fb8c4;
+    --buy:#3fb87e; --sell:#e05252; --hold:#d4a94a;
+    --mono:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;
+    --disp:"Oswald",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:
+      radial-gradient(1200px 500px at 80% -10%, #10161f 0%, transparent 60%),
+      var(--bg);
+    color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+    -webkit-font-smoothing:antialiased;padding:18px;line-height:1.5;}
+  .wrap{max-width:1080px;margin:0 auto}
+  /* header */
+  header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+    gap:10px;border-bottom:1px solid var(--border);padding-bottom:14px;margin-bottom:20px}
+  .brand{font-family:var(--disp);font-weight:700;font-size:26px;letter-spacing:.5px}
+  .brand small{color:var(--muted);font-weight:400;font-size:13px;letter-spacing:0}
+  .meta{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:left}
+  .meta b{color:var(--text)}
+  .pressure{display:inline-flex;align-items:center;gap:6px;margin-top:4px}
+  .dot{width:8px;height:8px;border-radius:50%}
+  /* verdict grid */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,var(--panel) 0%,var(--panel2) 100%);
+    border:1px solid var(--border);border-radius:14px;padding:18px;position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px}
+  .card.copper::before{background:linear-gradient(90deg,var(--copper),transparent)}
+  .card.gas::before{background:linear-gradient(90deg,var(--gas),transparent)}
+  .card .aname{font-family:var(--disp);font-weight:600;font-size:19px}
+  .card.copper .aname{color:var(--copper)} .card.gas .aname{color:var(--gas)}
+  .card .tk{font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .verdict{font-family:var(--disp);font-weight:700;font-size:46px;line-height:1;margin:10px 0 2px}
+  .state{font-size:13px;font-weight:600;margin-bottom:12px}
+  .v-buy{color:var(--buy)} .v-sell{color:var(--sell)} .v-hold{color:var(--hold)} .v-na{color:var(--muted)}
+  /* strength meter */
+  .meter-label{display:flex;justify-content:space-between;font-family:var(--mono);
+    font-size:11px;color:var(--muted);margin-bottom:5px}
+  .meter{display:flex;gap:3px;height:10px;margin-bottom:14px}
+  .seg{flex:1;background:#1c2330;border-radius:2px}
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+  .stat{background:#0e131c;border:1px solid var(--border);border-radius:8px;padding:8px 10px}
+  .stat .k{font-size:10px;color:var(--muted);letter-spacing:.5px}
+  .stat .v{font-family:var(--mono);font-size:16px;font-weight:600;margin-top:2px}
+  /* charts */
+  .charts{display:flex;flex-direction:column;gap:6px;margin:6px 0 12px}
+  .chart-row{background:#0e131c;border:1px solid var(--border);border-radius:8px;padding:6px 8px}
+  .chart-row .clabel{font-family:var(--mono);font-size:10px;color:var(--muted);margin-bottom:2px}
+  svg{display:block;width:100%}
+  .why{font-size:13px;color:var(--text);background:#0e131c;border:1px solid var(--border);
+    border-radius:8px;padding:10px 12px}
+  .why .h{font-size:11px;color:var(--muted);margin-bottom:3px}
+  /* osint */
+  .osint{margin-top:22px;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px}
+  .osint h2{font-family:var(--disp);font-weight:600;font-size:18px;margin:0 0 12px}
+  .alert{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #1a212c}
+  .alert:last-child{border-bottom:none}
+  .alert .flag{flex:none;font-family:var(--mono);font-size:10px;padding:3px 7px;border-radius:5px;height:fit-content}
+  .flag.supply{background:rgba(224,82,82,.15);color:var(--sell);border:1px solid rgba(224,82,82,.3)}
+  .flag.info{background:#1c2330;color:var(--muted);border:1px solid var(--border)}
+  .alert .body .t{font-size:14px}
+  .alert .body .s{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px}
+  .alert a{color:var(--gas);text-decoration:none}
+  /* footer */
+  footer{margin-top:22px;font-size:12px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
+  .method{cursor:pointer;color:var(--copper);font-weight:600}
+  .method-body{display:none;margin-top:8px;line-height:1.7}
+  .method-body.open{display:block}
+  .empty{text-align:center;color:var(--muted);padding:40px 0;font-family:var(--mono)}
+  button.refresh{background:transparent;border:1px solid var(--border);color:var(--text);
+    font-family:var(--mono);font-size:12px;padding:6px 12px;border-radius:7px;cursor:pointer}
+  button.refresh:hover{border-color:var(--copper);color:var(--copper)}
+  a.dashlink{color:var(--gas)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand">OSINT MARKET TERMINAL <small>· النحاس والغاز الطبيعي</small></div>
+      <div class="pressure" id="pressure"></div>
+    </div>
+    <div class="meta">
+      <div>آخر تحديث: <b id="gen">—</b></div>
+      <div id="ago" style="margin-top:2px"></div>
+      <button class="refresh" onclick="load()" style="margin-top:8px">↻ تحديث</button>
+    </div>
+  </header>
 
+  <div class="grid" id="cards"><div class="empty">…جارٍ التحميل</div></div>
+
+  <section class="osint">
+    <h2>تنبيهات الحركة اللوجستية والعسكرية (OSINT)</h2>
+    <div id="alerts"></div>
+  </section>
+
+  <footer>
+    <span class="method" onclick="document.getElementById('mb').classList.toggle('open')">▸ كيف يُحتسب القرار؟</span>
+    <div class="method-body" id="mb">
+      القرار الاتجاهي (شراء/بيع) مصدره الزخم الفني فقط: MACD مقابل خط الإشارة + موضع RSI،
+      مُوحَّد إلى «قوة إشارة» من 0 إلى 100. بوابة الحماية: لا يصدر «شراء» إذا كان RSI ≥ 65 (تشبّع شرائي)،
+      ولا «بيع» إذا كان RSI ≤ 35 (تشبّع بيعي) — في هذه الحالات يتحول القرار إلى «انتظار» مع بيان السبب.
+      إشارات OSINT (اضطراب العرض عند نقاط الاختناق) تعدّل «قوة الإشارة» فقط ولا تغيّر الاتجاه —
+      لأن العلاقة بين الحركة المادية والسعر علاقة وصفية ضعيفة، لا قاعدة تنبؤ. هذه أداة دعم قرار، لا توصية مؤكدة.
+      <br><br>
+      Directional call = technicals only (MACD vs signal + RSI), as a 0–100 signal strength.
+      No BUY when RSI ≥ 65, no SELL when RSI ≤ 35 → becomes HOLD with a stated reason.
+      OSINT supply pressure modulates strength only, never direction. Decision-support, not a guaranteed signal.
+    </div>
+    <div style="margin-top:10px">تُحدَّث البيانات آلياً عند كل تشغيل للنظام (أيام الأسبو  ~08:00 بغداد).
+      المصدر: <span style="font-family:var(--mono)">data.json</span> · Yahoo Finance + RSS OSINT.</div>
+  </footer>
+</div>
+
+<script>
+const V = {BUY:'v-buy', SELL:'v-sell', HOLD:'v-hold', 'N/A':'v-na'};
+const ACOLOR = {'Copper':'#c87941','Natural Gas':'#3fb8c4'};
+
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+/* --- SVG chart builders (self-contained, no libs) --- */
+function line(vals, w, h, color, {area=false, pad=3}={}){
+  if(!vals || vals.length<2) return '';
+  const mn=Math.min(...vals), mx=Math.max(...vals), rng=(mx-mn)||1;
+  const X=i=>pad + i*(w-2*pad)/(vals.length-1);
+  const Y=v=>pad + (h-2*pad)*(1-(v-mn)/rng);
+  const pts=vals.map((v,i)=>`${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(' ');
+  let svg=`<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" height="${h}">`;
+  if(area){
+    svg+=`<polygon points="${X(0).toFixed(1)},${h} ${pts} ${X(vals.length-1).toFixed(1)},${h}" fill="${color}" opacity="0.10"/>`;
+  }
+  svg+=`<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
+  return svg;
+}
+function macdChart(macd, signal, w, h){
+  if(!macd||macd.length<2) return '';
+  const hist=macd.map((m,i)=>m-signal[i]);
+  const all=macd.concat(signal), mn=Math.min(...all,0), mx=Math.max(...all,0), rng=(mx-mn)||1, pad=3;
+  const X=i=>pad+i*(w-2*pad)/(macd.length-1);
+  const Y=v=>pad+(h-2*pad)*(1-(v-mn)/rng);
+  const z=Y(0);
+  let bars='';
+  const bw=Math.max(1,(w-2*pad)/macd.length-1);
+  hist.forEach((v,i)=>{const y=Y(v);const top=Math.min(y,z);const hgt=Math.abs(y-z);
+    bars+=`<rect x="${(X(i)-bw/2).toFixed(1)}" y="${top.toFixed(1)}" width="${bw.toFixed(1)}" height="${Math.max(0.5,hgt).toFixed(1)}" fill="${v>=0?'#3fb87e':'#e05252'}" opacity="0.45"/>`;});
+  const P=(arr,col)=>`<polyline points="${arr.map((v,i)=>`${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(' ')}" fill="none" stroke="${col}" stroke-width="1.4"/>`;
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" height="${h}">${bars}
+     <line x1="0" y1="${z.toFixed(1)}" x2="${w}" y2="${z.toFixed(1)}" stroke="#3a3f4a" stroke-width="0.7"/>
+     ${P(signal,'#7d8694')}${P(macd,'#c9d1d9')}</svg>`;
+}
+function rsiChart(rsi, w, h){
+  if(!rsi||rsi.length<2) return '';
+  const pad=3, X=i=>pad+i*(w-2*pad)/(rsi.length-1), Y=v=>pad+(h-2*pad)*(1-v/100);
+  const pts=rsi.map((v,i)=>`${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join(' ');
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" height="${h}">
+    <line x1="0" y1="${Y(65)}" x2="${w}" y2="${Y(65)}" stroke="#e05252" stroke-width="0.6" stroke-dasharray="3 3" opacity="0.6"/>
+    <line x1="0" y1="${Y(35)}" x2="${w}" y2="${Y(35)}" stroke="#3fb87e" stroke-width="0.6" stroke-dasharray="3 3" opacity="0.6"/>
+    <polyline points="${pts}" fill="none" stroke="#c9d1d9" stroke-width="1.4"/></svg>`;
+}
+
+function strengthMeter(strength, color){
+  const segs=10, on=Math.round(strength/10);
+  let h='';
+  for(let i=0;i<segs;i++) h+=`<div class="seg" style="${i<on?`background:${color}`:''}"></div>`;
+  return h;
+}
+
+function card(a){
+  const cls = a.name==='Copper'?'copper':'gas';
+  const col = ACOLOR[a.name]||'#c9d1d9';
+  const vcls = V[a.verdict]||'v-na';
+  if(!a.ok){
+    return `<div class="card ${cls}"><div class="aname">${esc(a.name)}</div>
+      <div class="verdict v-na">—</div>
+      <div class="state" style="color:var(--sell)">تعذّر التحليل: ${esc(a.error||'خطأ')}</div></div>`;
+  }
+  const s=a.series||{};
+  return `<div class="card ${cls}">
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <span class="aname">${esc(a.name)}</span><span class="tk">${esc(a.ticker)}</span>
+    </div>
+    <div class="verdict ${vcls}">${esc(a.verdict_ar)} · ${esc(a.verdict)}</div>
+    <div class="state ${vcls}">${esc(a.state_ar)}</div>
+    <div class="meter-label"><span>قوة الإشارة</span><span>${a.strength}%</span></div>
+    <div class="meter">${strengthMeter(a.strength, col)}</div>
+    <div class="stats">
+      <div class="stat"><div class="k">السعر</div><div class="v">${a.close}</div></div>
+      <div class="stat"><div class="k">RSI</div><div class="v">${a.rsi}</div></div>
+      <div class="stat"><div class="k">MACD-H</div><div class="v">${a.macd_hist}</div></div>
+    </div>
+    <div class="charts">
+      <div class="chart-row"><div class="clabel">السعر · 60 يوم</div>${line(s.close,300,48,col,{area:true})}</div>
+      <div class="chart-row"><div class="clabel">MACD / Signal</div>${macdChart(s.macd,s.signal,300,40)}</div>
+      <div class="chart-row"><div class="clabel">RSI · 65/35</div>${rsiChart(s.rsi,300,36)}</div>
+    </div>
+    <div class="why"><div class="h">لماذا هذا القرار</div>${esc(a.rationale_ar)}</div>
+  </div>`;
+}
+
+function render(d){
+  document.getElementById('gen').textContent = d.generated_utc;
+  const gt = new Date(d.generated_utc);
+  const mins = Math.round((Date.now()-gt.getTime())/60000);
+  const agoTxt = isNaN(mins)?'':(mins<60?`منذ ${mins} دقيقة`:`منذ ${Math.round(mins/60)} ساعة`);
+  document.getElementById('ago').textContent = agoTxt;
+
+  const sp=d.osint.supply_pressure, col = sp>=3?'#e05252':(sp>=1?'#d4a94a':'#3fb87e');
+  document.getElementById('pressure').innerHTML =
+    `<span class="dot" style="background:${col}"></span>
+     <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">ضغط العرض ${sp} · ${d.osint.alert_count} تنبيه</span>`;
+
+  document.getElementById('cards').innerHTML = d.assets.map(card).join('');
+
+  const al = d.osint.alerts||[];
+  document.getElementById('alerts').innerHTML = al.length ? al.map(a=>`
+    <div class="alert">
+      <span class="flag ${a.supply?'supply':'info'}">${a.supply?'عرض':'رصد'}</span>
+      <div class="body"><div class="t">${a.link?`<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>`:esc(a.title)}</div>
+        <div class="s">${esc(a.source)} · ${esc(a.when)} · ${esc((a.keywords||[]).join('، '))}</div></div>
+    </div>`).join('')
+    : `<div class="empty">لا توجد تحركات ضمن الكلمات المفتاحية خلال نافذة الرصد.</div>`;
+}
+
+async function load(){
+  try{
+    const r = await fetch('data.json?t='+Date.now(), {cache:'no-store'});
+    if(!r.ok) throw new Error('data.json '+r.status);
+    render(await r.json());
+  }catch(e){
+    document.getElementById('cards').innerHTML =
+      `<div class="empty">تعذّر تحميل البيانات (${esc(e.message)}).<br>
+       شغّل النظام مرة واحدة يدوياً من تبويب Actions لإنشاء data.json.</div>`;
+  }
+}
+load();
+setInterval(load, 5*60*1000); // refresh every 5 min (data changes on cron only)
+</script>
+</body>
+</html>
