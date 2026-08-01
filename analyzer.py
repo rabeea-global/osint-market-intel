@@ -448,7 +448,7 @@ def main():
         a = analyze_asset(name, tk)
         if a["ok"]:
             apply_osint_overlay(a, supply_pressure)
-            print(f"     {a['verdict']} ({a['confidence']}%)")
+            print(f"     {a['verdict']} [{a['state']}] strength {a['strength']}%")
         else:
             print(f"     FAILED: {a['error']}")
         assets.append(a)
