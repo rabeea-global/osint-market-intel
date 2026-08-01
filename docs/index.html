@@ -74,6 +74,16 @@
   .alert .body .t{font-size:14px}
   .alert .body .s{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px}
   .alert a{color:var(--gas);text-decoration:none}
+  .ai-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+  .chip{font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:5px;border:1px solid var(--border);color:var(--muted)}
+  .chip.up{color:var(--buy);border-color:rgba(63,184,126,.4)}
+  .chip.down{color:var(--sell);border-color:rgba(224,82,82,.4)}
+  .chip.cu{color:var(--copper);border-color:rgba(200,121,65,.4)}
+  .chip.ga{color:var(--gas);border-color:rgba(63,184,196,.4)}
+  .ai-reason{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px;font-style:italic}
+  .ai-badge{font-family:var(--mono);font-size:10px;padding:2px 8px;border-radius:5px;
+    background:rgba(63,184,196,.12);color:var(--gas);border:1px solid rgba(63,184,196,.35);margin-inline-start:8px}
+  .ai-off{background:rgba(125,134,148,.12);color:var(--muted);border-color:var(--border)}
   /* footer */
   footer{margin-top:22px;font-size:12px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
   .method{cursor:pointer;color:var(--copper);font-weight:600}
@@ -218,18 +228,30 @@ function render(d){
   document.getElementById('ago').textContent = agoTxt;
 
   const sp=d.osint.supply_pressure, col = sp>=3?'#e05252':(sp>=1?'#d4a94a':'#3fb87e');
+  const aiOn = d.osint.ai_enabled;
   document.getElementById('pressure').innerHTML =
     `<span class="dot" style="background:${col}"></span>
-     <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">ضغط العرض ${sp} · ${d.osint.alert_count} تنبيه</span>`;
+     <span style="font-family:var(--mono);font-size:12px;color:var(--muted)">${d.osint.alert_count} تنبيه</span>
+     <span class="ai-badge ${aiOn?'':'ai-off'}">${aiOn?'AI intel ●':'AI off'}</span>`;
 
   document.getElementById('cards').innerHTML = d.assets.map(card).join('');
 
   const al = d.osint.alerts||[];
+  const arrow = dir => dir==='up'?'▲':dir==='down'?'▼':'●';
+  const commCls = c => c==='copper'?'cu':(c==='natural_gas'||c==='both')?'ga':'';
+  const aiChips = ai => !ai ? '' : `<div class="ai-chips">
+      <span class="chip">${esc(ai.event_type)}</span>
+      <span class="chip ${commCls(ai.commodity)}">${esc(ai.commodity)}</span>
+      <span class="chip ${ai.direction==='up'?'up':ai.direction==='down'?'down':''}">${arrow(ai.direction)} ${esc(ai.direction)}</span>
+      <span class="chip">M${ai.magnitude} · ${Math.round(ai.confidence*100)}%</span>
+      <span class="chip">${esc(ai.horizon)}</span>
+    </div>${ai.reason?`<div class="ai-reason">${esc(ai.reason)}</div>`:''}`;
   document.getElementById('alerts').innerHTML = al.length ? al.map(a=>`
     <div class="alert">
       <span class="flag ${a.supply?'supply':'info'}">${a.supply?'عرض':'رصد'}</span>
       <div class="body"><div class="t">${a.link?`<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>`:esc(a.title)}</div>
-        <div class="s">${esc(a.source)} · ${esc(a.when)} · ${esc((a.keywords||[]).join('، '))}</div></div>
+        <div class="s">${esc(a.source)} · ${esc(a.when)} · ${esc((a.keywords||[]).join('، '))}</div>
+        ${aiChips(a.ai)}</div>
     </div>`).join('')
     : `<div class="empty">لا توجد تحركات ضمن الكلمات المفتاحية خلال نافذة الرصد.</div>`;
 }
