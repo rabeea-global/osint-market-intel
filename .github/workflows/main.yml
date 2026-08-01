@@ -2,9 +2,12 @@ name: OSINT Market Intelligence
 
 on:
   schedule:
-    # 05:00 UTC, Monday–Friday
+    # 05:00 UTC, Monday–Friday  (≈ 08:00 Baghdad)
     - cron: '0 5 * * 1-5'
   workflow_dispatch: {}
+
+permissions:
+  contents: write        # needed to commit docs/data.json back to the repo
 
 jobs:
   run-analyzer:
@@ -25,8 +28,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run analyzer
+      - name: Run analyzer (writes docs/data.json, sends email)
         env:
           EMAIL: ${{ secrets.EMAIL }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
         run: python analyzer.py
+
+      - name: Publish data.json to the dashboard
+        if: always()          # run even if the email step failed, so the dashboard stays fresh
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No data change — nothing to commit."
+          else
+            git commit -m "data: dashboard update $(date -u +%FT%TZ)"
+            git push
+          fi
