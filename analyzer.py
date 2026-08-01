@@ -36,6 +36,7 @@ try:
     import pandas as pd
     import numpy as np
     import feedparser
+    import requests
     import matplotlib
     matplotlib.use("Agg")  # headless backend for CI
     import matplotlib.pyplot as plt
@@ -54,6 +55,11 @@ ASSETS = {
 
 # Public dashboard URL (GitHub Pages, /docs on main).
 DASHBOARD_URL = "https://rabeea-global.github.io/osint-market-intel/"
+
+# --- AI interpretation layer (optional; falls back to keywords if unset) ---
+ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
+ANTHROPIC_VERSION = "2023-06-01"
 
 OUTPUT_DIR = "docs"
 DATA_JSON = os.path.join(OUTPUT_DIR, "data.json")
@@ -194,30 +200,124 @@ def analyze_asset(name, ticker):
     return r
 
 
-def apply_osint_overlay(asset, supply_pressure):
-    """OSINT modulates confidence only; never flips the technical direction."""
-    reasons = []
-    reasons.append(f"MACD {'>' if asset['macd_hist'] and asset['macd_hist']>0 else '<'} signal")
-    reasons.append(f"RSI {asset['rsi']}")
+def apply_osint_overlay(asset, pressure, src="OSINT", src_ar="OSINT"):
+    """Intel MODULATES confidence only; never flips the technical direction.
+
+    pressure is SIGNED expected price pressure:
+      > 0  upward (bullish for the commodity)   < 0  downward   0  none
+    Alignment reinforces strength; conflict is flagged (not acted on)."""
+    reasons = [f"MACD {'>' if asset['macd_hist'] and asset['macd_hist']>0 else '<'} signal",
+               f"RSI {asset['rsi']}"]
     reasons_ar = [f"MACD {'فوق' if asset['macd_hist'] and asset['macd_hist']>0 else 'تحت'} خط الإشارة",
                   f"RSI {asset['rsi']}"]
 
-    if supply_pressure > 0:
-        if asset["verdict"] == "BUY":
-            bump = min(15, supply_pressure * 5)
+    asset["intel_pressure"] = round(float(pressure), 2)
+    p = float(pressure)
+    if abs(p) >= 0.1:
+        verdict = asset["verdict"]
+        aligned = (verdict == "BUY" and p > 0) or (verdict == "SELL" and p < 0)
+        conflict = (verdict == "BUY" and p < 0) or (verdict == "SELL" and p > 0)
+        arrow = "▲" if p > 0 else "▼"
+        arrow_ar = "صعودي" if p > 0 else "هبوطي"
+        bump = min(15, int(round(abs(p))) * 5)
+        if aligned:
             asset["strength"] = min(95, asset["strength"] + bump)
-            reasons.append(f"OSINT supply pressure +{supply_pressure} (raises conviction)")
-            reasons_ar.append(f"ضغط لوجستي على العرض +{supply_pressure} (يعزّز القناعة)")
-        elif asset["verdict"] == "SELL":
-            reasons.append(f"⚠ OSINT supply pressure +{supply_pressure} conflicts with SELL")
-            reasons_ar.append(f"⚠ ضغط لوجستي على العرض +{supply_pressure} يتعارض مع إشارة البيع")
-        else:
-            reasons.append(f"OSINT supply pressure +{supply_pressure} (watch)")
-            reasons_ar.append(f"ضغط لوجستي على العرض +{supply_pressure} (مراقبة)")
+            reasons.append(f"{src} intel {arrow} aligns (+{bump} conviction)")
+            reasons_ar.append(f"{src_ar}: ضغط {arrow_ar} يعزّز القرار (+{bump})")
+        elif conflict:
+            reasons.append(f"⚠ {src} intel {arrow} conflicts with {verdict}")
+            reasons_ar.append(f"⚠ {src_ar}: ضغط {arrow_ar} يتعارض مع {asset['verdict_ar']}")
+        else:  # HOLD
+            reasons.append(f"{src} intel {arrow} (watch)")
+            reasons_ar.append(f"{src_ar}: ضغط {arrow_ar} (مراقبة)")
 
     asset["rationale"] = "; ".join(reasons)
     asset["rationale_ar"] = "؛ ".join(reasons_ar)
     return asset
+
+
+# ---------------------------------------------------------------------------
+# AI INTERPRETATION LAYER  (event typing -> directional, per-commodity signal)
+# ---------------------------------------------------------------------------
+AI_SYSTEM = (
+    "You are a commodity-market intelligence analyst. For each news headline, judge its "
+    "impact on Copper (HG=F) and US Natural Gas (NG=F) futures via PHYSICAL supply/demand "
+    "and logistics only. Geography matters: Copper = Chile/Peru/DRC mines, smelters, ports, "
+    "port strikes; Natural Gas/LNG = Strait of Hormuz, Suez, US LNG terminals, pipelines, "
+    "cold/hot weather. A supply disruption pushes price UP; new supply or easing pushes DOWN. "
+    "Scheduled drills and pure rhetoric are usually low magnitude. Return ONLY a JSON array, "
+    "one object per headline, no prose, no markdown. Each object: "
+    '{"id":int,"event_type":"kinetic|escalation|de_escalation|scheduled_exercise|rhetoric|logistics_disruption|unrelated",'
+    '"commodity":"copper|natural_gas|both|none","direction":"up|down|neutral","magnitude":0-3,'
+    '"horizon":"immediate|days|weeks","confidence":0.0-1.0,"reason":"<=12 words"}'
+)
+
+
+def interpret_events_ai(alerts):
+    """Return list of per-headline classifications, or None to fall back to keywords."""
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key or not alerts:
+        return None
+    listing = "\n".join(f'{i}. {a["title"]}' for i, a in enumerate(alerts))
+    body = {
+        "model": ANTHROPIC_MODEL,
+        "max_tokens": 1800,
+        "system": AI_SYSTEM,
+        "messages": [{"role": "user", "content": "Classify these headlines:\n" + listing}],
+    }
+    try:
+        resp = requests.post(
+            ANTHROPIC_URL,
+            headers={"x-api-key": key, "anthropic-version": ANTHROPIC_VERSION,
+                     "content-type": "application/json"},
+            json=body, timeout=45,
+        )
+        resp.raise_for_status()
+        txt = "".join(b.get("text", "") for b in resp.json().get("content", [])
+                      if b.get("type") == "text").strip()
+        s, e = txt.find("["), txt.rfind("]")
+        if s < 0 or e < 0:
+            print("[WARN] AI response had no JSON array; falling back.", file=sys.stderr)
+            return None
+        arr = json.loads(txt[s:e + 1])
+        norm = []
+        for it in arr:
+            try:
+                norm.append({
+                    "id": int(it["id"]),
+                    "event_type": str(it.get("event_type", "unrelated")),
+                    "commodity": str(it.get("commodity", "none")),
+                    "direction": str(it.get("direction", "neutral")),
+                    "magnitude": max(0, min(3, int(it.get("magnitude", 0)))),
+                    "horizon": str(it.get("horizon", "days")),
+                    "confidence": max(0.0, min(1.0, float(it.get("confidence", 0)))),
+                    "reason": str(it.get("reason", ""))[:80],
+                })
+            except Exception:
+                continue
+        print(f"[OK] AI classified {len(norm)}/{len(alerts)} events.")
+        return norm or None
+    except Exception as ex:
+        print(f"[WARN] AI interpret failed ({ex}); falling back to keywords.", file=sys.stderr)
+        return None
+
+
+def aggregate_ai_pressure(alerts, classifications):
+    """Attach each classification to its alert; return signed per-commodity pressure."""
+    by_id = {c["id"]: c for c in classifications if "id" in c}
+    dir_sign = {"up": 1.0, "down": -1.0, "neutral": 0.0}
+    cmap = {"copper": ["Copper"], "natural_gas": ["Natural Gas"],
+            "both": ["Copper", "Natural Gas"], "none": []}
+    press = {"Copper": 0.0, "Natural Gas": 0.0}
+    for i, a in enumerate(alerts):
+        c = by_id.get(i)
+        if not c:
+            continue
+        a["ai"] = c
+        contrib = dir_sign.get(c["direction"], 0.0) * c["magnitude"] * c["confidence"]
+        for name in cmap.get(c["commodity"], []):
+            press[name] += contrib
+    return {k: round(v, 2) for k, v in press.items()}
 
 
 # ---------------------------------------------------------------------------
@@ -273,7 +373,7 @@ def scan_osint():
 # ---------------------------------------------------------------------------
 # 3. OUTPUTS: data.json + chart + email
 # ---------------------------------------------------------------------------
-def write_data_json(assets, alerts, supply_pressure):
+def write_data_json(assets, alerts, supply_pressure, ai_enabled=False, ai_pressure=None):
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     payload = {
         "generated_utc": dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -281,6 +381,8 @@ def write_data_json(assets, alerts, supply_pressure):
         "osint": {
             "alert_count": len(alerts),
             "supply_pressure": supply_pressure,
+            "ai_enabled": ai_enabled,
+            "ai_pressure": ai_pressure or {},
             "alerts": alerts,
         },
     }
@@ -437,23 +539,40 @@ def send_email(payload):
 # MAIN
 # ---------------------------------------------------------------------------
 def main():
-    print("=== OSINT & Market Intelligence v2 ===")
+    print("=== OSINT & Market Intelligence v3 (AI intel) ===")
     print("[..] OSINT scan")
     alerts, supply_pressure = scan_osint()
-    print(f"     {len(alerts)} alerts, supply pressure {supply_pressure}")
+    print(f"     {len(alerts)} alerts, keyword supply pressure {supply_pressure}")
+
+    print("[..] AI interpretation")
+    classifications = interpret_events_ai(alerts)
+    ai_enabled = classifications is not None
+    if ai_enabled:
+        ai_press = aggregate_ai_pressure(alerts, classifications)
+        print(f"     AI pressure: {ai_press}")
+    else:
+        ai_press = None
+        print("     AI disabled/failed -> keyword fallback")
 
     assets = []
     for name, tk in ASSETS.items():
         print(f"[..] {name}")
         a = analyze_asset(name, tk)
         if a["ok"]:
-            apply_osint_overlay(a, supply_pressure)
+            if ai_enabled:
+                apply_osint_overlay(a, ai_press.get(name, 0.0),
+                                    src="AI intel", src_ar="تحليل ذكي")
+            else:
+                # keyword fallback: supply disruption == upward price pressure
+                apply_osint_overlay(a, float(supply_pressure),
+                                    src="OSINT", src_ar="OSINT")
             print(f"     {a['verdict']} [{a['state']}] strength {a['strength']}%")
         else:
             print(f"     FAILED: {a['error']}")
         assets.append(a)
 
-    payload = write_data_json(assets, alerts, supply_pressure)
+    payload = write_data_json(assets, alerts, supply_pressure,
+                              ai_enabled=ai_enabled, ai_pressure=ai_press)
     print("[..] email")
     send_email(payload)
     print("=== done ===")
