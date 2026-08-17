@@ -1,30 +1,28 @@
 {
-  "generated_utc": "2026-08-14T06:08:44Z",
+  "generated_utc": "2026-08-17T05:29:36Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.589,
-      "rsi": 58.89,
-      "macd": 0.09111,
-      "macd_signal": 0.08197,
-      "macd_hist": 0.00914,
-      "tech_score": 0.283,
-      "macd_component": 0.388,
-      "rsi_component": 0.178,
+      "close": 6.7245,
+      "rsi": 65.54,
+      "macd": 0.09538,
+      "macd_signal": 0.08575,
+      "macd_hist": 0.00963,
+      "tech_score": 0.359,
+      "macd_component": 0.407,
+      "rsi_component": 0.311,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
-      "state": "NEUTRAL",
-      "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 28,
-      "rationale": "MACD > signal; RSI 58.89; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 58.89؛ OSINT: ضغط صعودي (مراقبة)",
+      "state": "OVERBOUGHT",
+      "state_ar": "تشبّع شرائي — انتظار تصحيح",
+      "strength": 36,
+      "rationale": "MACD > signal; RSI 65.54; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 65.54؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-05-19",
-          "2026-05-20",
           "2026-05-21",
           "2026-05-22",
           "2026-05-26",
@@ -82,11 +80,11 @@
           "2026-08-10",
           "2026-08-11",
           "2026-08-12",
-          "2026-08-14"
+          "2026-08-13",
+          "2026-08-14",
+          "2026-08-17"
         ],
         "close": [
-          6.165,
-          6.2905,
           6.257,
           6.342,
           6.361,
@@ -144,11 +142,11 @@
           6.5945,
           6.612,
           6.597,
-          6.589
+          6.5925,
+          6.5995,
+          6.7245
         ],
         "macd": [
-          0.12979,
-          0.12295,
           0.11351,
           0.11161,
           0.11036,
@@ -206,11 +204,11 @@
           0.0958,
           0.09626,
           0.09434,
-          0.09111
+          0.09139,
+          0.0886,
+          0.09538
         ],
         "signal": [
-          0.13097,
-          0.12936,
           0.12619,
           0.12328,
           0.12069,
@@ -268,11 +266,11 @@
           0.07096,
           0.07602,
           0.07969,
-          0.08197
+          0.08203,
+          0.08334,
+          0.08575
         ],
         "rsi": [
-          52.56,
-          56.83,
           55.4,
           58.27,
           58.91,
@@ -330,35 +328,35 @@
           59.74,
           60.5,
           59.47,
-          58.89
+          59.14,
+          59.51,
+          65.54
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 5.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.756,
-      "rsi": 44.37,
-      "macd": -0.06867,
-      "macd_signal": -0.08453,
-      "macd_hist": 0.01586,
-      "tech_score": 0.286,
-      "macd_component": 0.685,
-      "rsi_component": -0.113,
+      "close": 2.664,
+      "rsi": 39.16,
+      "macd": -0.06962,
+      "macd_signal": -0.07913,
+      "macd_hist": 0.0095,
+      "tech_score": 0.111,
+      "macd_component": 0.439,
+      "rsi_component": -0.217,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 29,
-      "rationale": "MACD > signal; RSI 44.37; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 44.37؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 11,
+      "rationale": "MACD > signal; RSI 39.16; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 39.16؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-05-19",
-          "2026-05-20",
           "2026-05-21",
           "2026-05-22",
           "2026-05-26",
@@ -416,11 +414,11 @@
           "2026-08-10",
           "2026-08-11",
           "2026-08-12",
-          "2026-08-14"
+          "2026-08-13",
+          "2026-08-14",
+          "2026-08-17"
         ],
         "close": [
-          3.114,
-          3.004,
           3.018,
           2.907,
           2.894,
@@ -478,11 +476,11 @@
           2.794,
           2.767,
           2.804,
-          2.756
+          2.727,
+          2.733,
+          2.664
         ],
         "macd": [
-          0.06249,
-          0.0664,
           0.06982,
           0.06285,
           0.05563,
@@ -540,11 +538,11 @@
           -0.092,
           -0.08393,
           -0.07369,
-          -0.06867
+          -0.07098,
+          -0.06756,
+          -0.06962
         ],
         "signal": [
-          0.01893,
-          0.02843,
           0.0367,
           0.04193,
           0.04467,
@@ -602,11 +600,11 @@
           -0.09425,
           -0.09219,
           -0.08849,
-          -0.08453
+          -0.08499,
+          -0.0815,
+          -0.07913
         ],
         "rsi": [
-          67.97,
-          59.51,
           60.19,
           52.66,
           51.84,
@@ -664,118 +662,69 @@
           46.33,
           44.7,
           47.43,
-          44.37
+          42.7,
+          43.18,
+          39.16
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 5.0
     }
   ],
   "osint": {
-    "alert_count": 10,
-    "supply_pressure": 9,
+    "alert_count": 5,
+    "supply_pressure": 5,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Trump Orders Navy to Return to Steam Catapults, Allows Overseas Shipbuilding",
-        "link": "https://www.marinelink.com/news/trump-orders-navy-return-steam-catapults-542104",
+        "title": "Shipping Slows Through Strait of Hormuz After Tanker Attacks",
+        "link": "https://www.marinelink.com/news/shipping-slows-strait-hormuz-tanker-542144",
         "source": "MarineLink News",
         "keywords": [
-          "aircraft carrier"
-        ],
-        "when": "2026-08-13 23:51",
-        "supply": true
-      },
-      {
-        "title": "Container Rates Extend Gains as Carriers Tighten Transpacific Capacity",
-        "link": "https://gcaptain.com/container-rates-extend-gains-as-carriers-tighten-transpacific-capacity/",
-        "source": "gCaptain",
-        "keywords": [
-          "supply chain"
-        ],
-        "when": "2026-08-13 20:56",
-        "supply": true
-      },
-      {
-        "title": "Iran, US Make Competing Claims Over Control of Strait of Hormuz",
-        "link": "https://gcaptain.com/iran-us-make-competing-claims-over-control-of-strait-of-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
           "strait"
         ],
-        "when": "2026-08-13 20:50",
+        "when": "2026-08-17 00:54",
         "supply": true
       },
       {
-        "title": "Hormuz Shipping Traffic Shows No Sign of Recovery",
-        "link": "https://gcaptain.com/hormuz-shipping-traffic-shows-no-sign-of-recovery/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-08-13 17:42",
-        "supply": true
-      },
-      {
-        "title": "USS George Washington Heading West, Lincoln Deployment Nears 9 Months",
-        "link": "https://news.usni.org/2026/08/13/uss-george-washington-heading-west-lincoln-deployment-nears-9-months",
-        "source": "USNI News",
-        "keywords": [
-          "deployment",
-          "strait"
-        ],
-        "when": "2026-08-13 16:58",
-        "supply": true
-      },
-      {
-        "title": "Hormuz Disruption Cuts Both Ways for Maersk and Hapag-Lloyd",
-        "link": "https://gcaptain.com/hormuz-disruption-cuts-both-ways-for-maersk-and-hapag-lloyd/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-08-13 16:38",
-        "supply": true
-      },
-      {
-        "title": "US Looks to Maintain Iranian Naval Blockade \"Indefinitely\"",
-        "link": "https://www.marinelink.com/news/us-looks-maintain-iranian-naval-blockade-542099",
-        "source": "MarineLink News",
+        "title": "For Iran's Ruling Families, Corruption and Blockade Busting Run Deep",
+        "link": "https://maritime-executive.com/article/for-iran-s-ruling-families-corruption-and-blockade-busting-run-deep",
+        "source": "The Maritime Executive",
         "keywords": [
           "blockade"
         ],
-        "when": "2026-08-13 16:34",
+        "when": "2026-08-16 23:03",
         "supply": true
       },
       {
-        "title": "Carrier John F. Kennedy Leaves Newport News for Acceptance Trials, 7 Weapons Elevators Delivered",
-        "link": "https://news.usni.org/2026/08/12/carrier-john-f-kennedy-leaves-newport-news-for-acceptance-trials-7-weapons-elevators-delivered",
-        "source": "USNI News",
-        "keywords": [
-          "aircraft carrier"
-        ],
-        "when": "2026-08-12 20:59",
-        "supply": true
-      },
-      {
-        "title": "SAR Operation Underway as Indonesian Ferry Burns at Sea",
-        "link": "https://maritime-executive.com/article/sar-operation-underway-as-indonesian-ferry-burns-at-sea",
+        "title": "Trump Pledges to Make Hormuz a \"Territory of the United States\"",
+        "link": "https://maritime-executive.com/article/trump-pledges-to-make-hormuz-a-territory-of-the-united-states",
         "source": "The Maritime Executive",
         "keywords": [
           "strait"
         ],
-        "when": "2026-08-12 20:45",
+        "when": "2026-08-16 19:33",
         "supply": true
       },
       {
-        "title": "Syrians Agree to Reduced and Limited Russian Presence",
-        "link": "https://maritime-executive.com/article/syrians-agree-to-reduced-and-limited-russian-presence",
-        "source": "The Maritime Executive",
+        "title": "Hormuz Ship Attacks Mount As US Vows To Cripple Iran Economy",
+        "link": "https://gcaptain.com/hormuz-ship-attacks-mount-as-us-vows-to-cripple-iran-economy/",
+        "source": "gCaptain",
         "keywords": [
-          "satellite imagery"
+          "strait"
         ],
-        "when": "2026-08-12 16:23",
-        "supply": false
+        "when": "2026-08-15 21:38",
+        "supply": true
+      },
+      {
+        "title": "UAE Says Iran Attacked Another ADNOC Vessel In Hormuz",
+        "link": "https://gcaptain.com/uae-says-iran-attacked-another-adnoc-vessel-in-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-08-15 19:25",
+        "supply": true
       }
     ]
   }
