@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-08-31T11:17:17Z",
+  "generated_utc": "2026-09-01T09:42:15Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.6805,
-      "rsi": 59.54,
-      "macd": 0.05488,
-      "macd_signal": 0.0585,
-      "macd_hist": -0.00362,
-      "tech_score": 0.018,
-      "macd_component": -0.154,
-      "rsi_component": 0.191,
+      "close": 6.5985,
+      "rsi": 55.17,
+      "macd": 0.04606,
+      "macd_signal": 0.05491,
+      "macd_hist": -0.00885,
+      "tech_score": -0.136,
+      "macd_component": -0.376,
+      "rsi_component": 0.103,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 2,
-      "rationale": "MACD < signal; RSI 59.54; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 59.54؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 14,
+      "rationale": "MACD < signal; RSI 55.17; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 55.17؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-06-05",
           "2026-06-08",
           "2026-06-09",
           "2026-06-10",
@@ -82,10 +81,10 @@
           "2026-08-26",
           "2026-08-27",
           "2026-08-28",
-          "2026-08-31"
+          "2026-08-31",
+          "2026-09-01"
         ],
         "close": [
-          6.2635,
           6.3295,
           6.3025,
           6.249,
@@ -144,10 +143,10 @@
           6.5945,
           6.587,
           6.562,
-          6.6805
+          6.5935,
+          6.5985
         ],
         "macd": [
-          0.10054,
           0.08762,
           0.07434,
           0.05883,
@@ -206,10 +205,10 @@
           0.05888,
           0.05546,
           0.05016,
-          0.05488
+          0.04794,
+          0.04606
         ],
         "signal": [
-          0.11337,
           0.10822,
           0.10144,
           0.09292,
@@ -268,10 +267,10 @@
           0.06329,
           0.06172,
           0.05941,
-          0.0585
+          0.05712,
+          0.05491
         ],
         "rsi": [
-          48.59,
           51.0,
           49.97,
           47.9,
@@ -330,34 +329,34 @@
           55.15,
           54.63,
           52.87,
-          59.54
+          54.85,
+          55.17
         ]
       },
-      "intel_pressure": 4.0
+      "intel_pressure": 8.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.901,
-      "rsi": 56.64,
-      "macd": 0.0028,
-      "macd_signal": -0.02595,
-      "macd_hist": 0.02875,
-      "tech_score": 0.566,
+      "close": 2.926,
+      "rsi": 57.99,
+      "macd": 0.01287,
+      "macd_signal": -0.01775,
+      "macd_hist": 0.03063,
+      "tech_score": 0.58,
       "macd_component": 1.0,
-      "rsi_component": 0.133,
+      "rsi_component": 0.16,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 72,
-      "rationale": "MACD > signal; RSI 56.64; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 56.64؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 73,
+      "rationale": "MACD > signal; RSI 57.99; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 57.99؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-06-05",
           "2026-06-08",
           "2026-06-09",
           "2026-06-10",
@@ -416,10 +415,10 @@
           "2026-08-26",
           "2026-08-27",
           "2026-08-28",
-          "2026-08-31"
+          "2026-08-31",
+          "2026-09-01"
         ],
         "close": [
-          3.229,
           3.147,
           3.14,
           3.185,
@@ -478,10 +477,10 @@
           2.842,
           2.907,
           2.888,
-          2.901
+          2.935,
+          2.926
         ],
         "macd": [
-          0.11886,
           0.10991,
           0.10108,
           0.0966,
@@ -540,10 +539,10 @@
           -0.02574,
           -0.01328,
           -0.00487,
-          0.0028
+          0.00551,
+          0.01287
         ],
         "signal": [
-          0.09773,
           0.10016,
           0.10035,
           0.0996,
@@ -602,10 +601,10 @@
           -0.04694,
           -0.04021,
           -0.03314,
-          -0.02595
+          -0.02541,
+          -0.01775
         ],
         "rsi": [
-          60.75,
           56.11,
           55.72,
           57.75,
@@ -664,18 +663,80 @@
           53.03,
           57.35,
           55.74,
-          56.64
+          58.83,
+          57.99
         ]
       },
-      "intel_pressure": 4.0
+      "intel_pressure": 8.0
     }
   ],
   "osint": {
-    "alert_count": 4,
-    "supply_pressure": 4,
+    "alert_count": 9,
+    "supply_pressure": 8,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Tanker Struck by Three Projectiles",
+        "link": "https://www.marinelink.com/news/tanker-struck-three-projectiles-542586",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 01:38",
+        "supply": true
+      },
+      {
+        "title": "Tanker Struck by Three Projectiles on Omani Side of Strait of Hormuz",
+        "link": "https://gcaptain.com/tanker-incident-involving-military-forces-reported-off-oman-amid-u-s-iran-escalation/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-08-31 21:44",
+        "supply": true
+      },
+      {
+        "title": "CENTCOM Says Iran Attempts to Intimidate Shipping with False Reports",
+        "link": "https://maritime-executive.com/article/centcom-says-iran-attempts-to-intimidate-shipping-with-false-reports",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-08-31 20:25",
+        "supply": true
+      },
+      {
+        "title": "USNI News Fleet and Marine Tracker: Aug. 31, 2026",
+        "link": "https://news.usni.org/2026/08/31/usni-news-fleet-and-marine-tracker-aug-31-2026",
+        "source": "USNI News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-08-31 17:57",
+        "supply": true
+      },
+      {
+        "title": "Japan’s First Tomahawk Cruise Missile Destroyer Back from U.S.",
+        "link": "https://news.usni.org/2026/08/31/japans-first-tomahawk-cruise-missile-destroyer-back-from-u-s",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-08-31 16:36",
+        "supply": false
+      },
+      {
+        "title": "US Pre-empts Iranian Rocket Deployment of Sea Mines in Strait of Hormuz",
+        "link": "https://maritime-executive.com/article/us-pre-empts-iranian-rocket-deployment-of-sea-mines-in-strait-of-hormuz",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "deployment",
+          "strait"
+        ],
+        "when": "2026-08-31 12:57",
+        "supply": true
+      },
       {
         "title": "US Carrier Visit to Thailand’s Pattaya Lifts Hope and Sex-Tourism Risk",
         "link": "https://gcaptain.com/us-carrier-visit-to-thailands-pattaya-lifts-hope-and-sex-tourism-risk/",
@@ -685,16 +746,6 @@
           "aircraft carrier"
         ],
         "when": "2026-08-31 07:42",
-        "supply": true
-      },
-      {
-        "title": "Tanker Hit as Hormuz Sailings Drop",
-        "link": "https://www.marinelink.com/news/tanker-hit-hormuz-sailings-drop-542542",
-        "source": "MarineLink News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-08-31 01:32",
         "supply": true
       },
       {
