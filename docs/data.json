@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-01T09:42:15Z",
+  "generated_utc": "2026-09-02T09:14:12Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.5985,
-      "rsi": 55.17,
-      "macd": 0.04606,
-      "macd_signal": 0.05491,
-      "macd_hist": -0.00885,
-      "tech_score": -0.136,
-      "macd_component": -0.376,
-      "rsi_component": 0.103,
-      "verdict": "HOLD",
-      "verdict_ar": "انتظار",
-      "state": "NEUTRAL",
-      "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 14,
-      "rationale": "MACD < signal; RSI 55.17; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 55.17؛ OSINT: ضغط صعودي (مراقبة)",
+      "close": 6.5345,
+      "rsi": 50.65,
+      "macd": 0.03329,
+      "macd_signal": 0.04941,
+      "macd_hist": -0.01612,
+      "tech_score": -0.336,
+      "macd_component": -0.686,
+      "rsi_component": 0.013,
+      "verdict": "SELL",
+      "verdict_ar": "بيع",
+      "state": "SELL",
+      "state_ar": "بيع",
+      "strength": 34,
+      "rationale": "MACD < signal; RSI 50.65; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 50.65؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-06-08",
           "2026-06-09",
           "2026-06-10",
           "2026-06-11",
@@ -82,10 +81,10 @@
           "2026-08-27",
           "2026-08-28",
           "2026-08-31",
-          "2026-09-01"
+          "2026-09-01",
+          "2026-09-02"
         ],
         "close": [
-          6.3295,
           6.3025,
           6.249,
           6.259,
@@ -144,10 +143,10 @@
           6.587,
           6.562,
           6.5935,
-          6.5985
+          6.5065,
+          6.5345
         ],
         "macd": [
-          0.08762,
           0.07434,
           0.05883,
           0.0468,
@@ -206,10 +205,10 @@
           0.05546,
           0.05016,
           0.04794,
-          0.04606
+          0.03872,
+          0.03329
         ],
         "signal": [
-          0.10822,
           0.10144,
           0.09292,
           0.0837,
@@ -268,10 +267,10 @@
           0.06172,
           0.05941,
           0.05712,
-          0.05491
+          0.05344,
+          0.04941
         ],
         "rsi": [
-          51.0,
           49.97,
           47.9,
           48.33,
@@ -330,34 +329,34 @@
           54.63,
           52.87,
           54.85,
-          55.17
+          48.75,
+          50.65
         ]
       },
-      "intel_pressure": 8.0
+      "intel_pressure": 11.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.926,
-      "rsi": 57.99,
-      "macd": 0.01287,
-      "macd_signal": -0.01775,
-      "macd_hist": 0.03063,
-      "tech_score": 0.58,
+      "close": 2.95,
+      "rsi": 59.13,
+      "macd": 0.01905,
+      "macd_signal": -0.01067,
+      "macd_hist": 0.02972,
+      "tech_score": 0.591,
       "macd_component": 1.0,
-      "rsi_component": 0.16,
+      "rsi_component": 0.183,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 73,
-      "rationale": "MACD > signal; RSI 57.99; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 57.99؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 74,
+      "rationale": "MACD > signal; RSI 59.13; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 59.13؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-06-08",
           "2026-06-09",
           "2026-06-10",
           "2026-06-11",
@@ -416,10 +415,10 @@
           "2026-08-27",
           "2026-08-28",
           "2026-08-31",
-          "2026-09-01"
+          "2026-09-01",
+          "2026-09-02"
         ],
         "close": [
-          3.147,
           3.14,
           3.185,
           3.087,
@@ -478,10 +477,10 @@
           2.907,
           2.888,
           2.935,
-          2.926
+          2.904,
+          2.95
         ],
         "macd": [
-          0.10991,
           0.10108,
           0.0966,
           0.08418,
@@ -540,10 +539,10 @@
           -0.01328,
           -0.00487,
           0.00551,
-          0.01287
+          0.01112,
+          0.01905
         ],
         "signal": [
-          0.10016,
           0.10035,
           0.0996,
           0.09651,
@@ -602,10 +601,10 @@
           -0.04021,
           -0.03314,
           -0.02541,
-          -0.01775
+          -0.0181,
+          -0.01067
         ],
         "rsi": [
-          56.11,
           55.72,
           57.75,
           52.12,
@@ -664,26 +663,87 @@
           57.35,
           55.74,
           58.83,
-          57.99
+          56.05,
+          59.13
         ]
       },
-      "intel_pressure": 8.0
+      "intel_pressure": 11.0
     }
   ],
   "osint": {
-    "alert_count": 9,
-    "supply_pressure": 8,
+    "alert_count": 12,
+    "supply_pressure": 11,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Tanker Struck by Three Projectiles",
-        "link": "https://www.marinelink.com/news/tanker-struck-three-projectiles-542586",
-        "source": "MarineLink News",
+        "title": "Qatari, UAE LNG Cargoes Transferred Via Ship-to-Ship Outside Strait of Hormuz",
+        "link": "https://gcaptain.com/qatari-uae-lng-cargoes-transferred-via-ship-to-ship-outside-strait-of-hormuz/",
+        "source": "gCaptain",
         "keywords": [
           "strait"
         ],
-        "when": "2026-09-01 01:38",
+        "when": "2026-09-02 07:04",
+        "supply": true
+      },
+      {
+        "title": "U.S. Strikes Iran as Tanker Attacks Raise Stakes in Strait of Hormuz",
+        "link": "https://gcaptain.com/u-s-strikes-iran-as-tanker-attacks-raise-stakes-in-strait-of-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 18:57",
+        "supply": true
+      },
+      {
+        "title": "US launches new barrage of strikes on Iran around Strait of Hormuz",
+        "link": "https://www.defensenews.com/news/your-military/2026/09/01/us-launches-new-barrage-of-strikes-on-iran-around-strait-of-hormuz/",
+        "source": "Defense News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 18:13",
+        "supply": true
+      },
+      {
+        "title": "INTERTANKO: Hormuz Mine Clearance ‘Not Sufficient’ to Restore Normal Shipping",
+        "link": "https://gcaptain.com/intertanko-hormuz-mine-clearance-not-sufficient-to-restore-normal-shipping/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 16:16",
+        "supply": true
+      },
+      {
+        "title": "Iran Increases Hormuz Pressure with Nearly Simultaneous Attacks on Tankers",
+        "link": "https://maritime-executive.com/article/iran-increases-hormuz-pressure-with-nearly-simultaneous-attacks-on-tankers",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 15:57",
+        "supply": true
+      },
+      {
+        "title": "Iranian Misrepresentations Over the Strait of Hormuz Addressed by Oman",
+        "link": "https://maritime-executive.com/article/iranian-misrepresentations-over-the-strait-of-hormuz-addressed-by-oman",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 13:04",
+        "supply": true
+      },
+      {
+        "title": "Two Tankers Carrying Saudi Oil Attacked in Strait of Hormuz",
+        "link": "https://gcaptain.com/two-tankers-carrying-saudi-oil-attacked-in-strait-of-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-01 12:25",
         "supply": true
       },
       {
@@ -735,37 +795,6 @@
           "strait"
         ],
         "when": "2026-08-31 12:57",
-        "supply": true
-      },
-      {
-        "title": "US Carrier Visit to Thailand’s Pattaya Lifts Hope and Sex-Tourism Risk",
-        "link": "https://gcaptain.com/us-carrier-visit-to-thailands-pattaya-lifts-hope-and-sex-tourism-risk/",
-        "source": "gCaptain",
-        "keywords": [
-          "deployment",
-          "aircraft carrier"
-        ],
-        "when": "2026-08-31 07:42",
-        "supply": true
-      },
-      {
-        "title": "Vessels Crossing Strait Of Hormuz Drop To 5 Per Day",
-        "link": "https://gcaptain.com/vessels-crossing-strait-of-hormuz-drop-to-5-per-day/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-08-30 23:42",
-        "supply": true
-      },
-      {
-        "title": "USS Abraham Lincoln Passes Through Singapore Strait En route to Thailand",
-        "link": "https://news.usni.org/2026/08/30/uss-abraham-lincoln-passes-through-singapore-strait-en-route-to-thailand",
-        "source": "USNI News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-08-30 23:12",
         "supply": true
       }
     ]
