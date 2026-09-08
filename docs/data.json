@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-09-07T09:53:07Z",
+  "generated_utc": "2026-09-08T09:17:46Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.6825,
-      "rsi": 59.98,
-      "macd": 0.0378,
-      "macd_signal": 0.04134,
-      "macd_hist": -0.00354,
-      "tech_score": 0.022,
-      "macd_component": -0.156,
-      "rsi_component": 0.2,
+      "close": 6.77,
+      "rsi": 64.13,
+      "macd": 0.04478,
+      "macd_signal": 0.04274,
+      "macd_hist": 0.00204,
+      "tech_score": 0.186,
+      "macd_component": 0.09,
+      "rsi_component": 0.283,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 2,
-      "rationale": "MACD < signal; RSI 59.98; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 59.98؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 19,
+      "rationale": "MACD > signal; RSI 64.13; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 64.13؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
           "2026-06-12",
@@ -82,7 +82,7 @@
           "2026-09-02",
           "2026-09-03",
           "2026-09-04",
-          "2026-09-07"
+          "2026-09-08"
         ],
         "close": [
           6.4305,
@@ -144,7 +144,7 @@
           6.501,
           6.577,
           6.597,
-          6.6825
+          6.77
         ],
         "macd": [
           0.05086,
@@ -206,7 +206,7 @@
           0.03062,
           0.02998,
           0.03074,
-          0.0378
+          0.04478
         ],
         "signal": [
           0.07757,
@@ -268,7 +268,7 @@
           0.04888,
           0.0451,
           0.04223,
-          0.04134
+          0.04274
         ],
         "rsi": [
           55.89,
@@ -330,31 +330,31 @@
           48.41,
           53.59,
           54.88,
-          59.98
+          64.13
         ]
       },
-      "intel_pressure": 6.0
+      "intel_pressure": 9.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.975,
-      "rsi": 59.69,
-      "macd": 0.03459,
-      "macd_signal": 0.00908,
-      "macd_hist": 0.02551,
-      "tech_score": 0.597,
+      "close": 2.979,
+      "rsi": 59.94,
+      "macd": 0.03491,
+      "macd_signal": 0.00915,
+      "macd_hist": 0.02577,
+      "tech_score": 0.599,
       "macd_component": 1.0,
-      "rsi_component": 0.194,
+      "rsi_component": 0.199,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
       "strength": 75,
-      "rationale": "MACD > signal; RSI 59.69; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 59.69؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "rationale": "MACD > signal; RSI 59.94; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 59.94؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
           "2026-06-12",
@@ -416,7 +416,7 @@
           "2026-09-02",
           "2026-09-03",
           "2026-09-04",
-          "2026-09-07"
+          "2026-09-08"
         ],
         "close": [
           3.12,
@@ -478,7 +478,7 @@
           2.956,
           2.913,
           2.975,
-          2.975
+          2.979
         ],
         "macd": [
           0.07538,
@@ -540,7 +540,7 @@
           0.01952,
           0.02246,
           0.02945,
-          0.03459
+          0.03491
         ],
         "signal": [
           0.09136,
@@ -602,7 +602,7 @@
           -0.01059,
           -0.00398,
           0.0027,
-          0.00908
+          0.00915
         ],
         "rsi": [
           52.88,
@@ -664,18 +664,68 @@
           59.48,
           55.59,
           59.69,
-          59.69
+          59.94
         ]
       },
-      "intel_pressure": 6.0
+      "intel_pressure": 9.0
     }
   ],
   "osint": {
-    "alert_count": 7,
-    "supply_pressure": 6,
+    "alert_count": 10,
+    "supply_pressure": 9,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Goldman, Rystad See Room for $120 Oil if U.S.-Iran Conflict Continues",
+        "link": "https://maritime-executive.com/article/goldman-rystad-see-room-for-120-oil-if-u-s-iran-conflict-continues",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-07 21:52",
+        "supply": true
+      },
+      {
+        "title": "U.S. Navy Tests Out a System to Refuel USVs at Sea",
+        "link": "https://maritime-executive.com/article/u-s-navy-tests-out-a-system-to-refuel-usvs-at-sea",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-09-07 16:40",
+        "supply": false
+      },
+      {
+        "title": "Tanker Strikes Push Hormuz Traffic to Lowest Since May",
+        "link": "https://www.marinelink.com/news/tanker-strikes-push-hormuz-traffic-lowest-542770",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-07 09:45",
+        "supply": true
+      },
+      {
+        "title": "China Expands Patrols of Taiwan’s Pacific Coast, Raising Maritime Tensions",
+        "link": "https://gcaptain.com/china-expands-patrols-of-taiwans-pacific-coast-raising-maritime-tensions/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-07 09:44",
+        "supply": true
+      },
+      {
+        "title": "Iran Says to Announce New Restricted Zone in the Gulf in the Coming Days",
+        "link": "https://gcaptain.com/iran-says-to-announce-new-restricted-zone-in-the-gulf-in-the-coming-days/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-07 09:40",
+        "supply": true
+      },
       {
         "title": "Hormuz Traffic Dips To Lowest Since May After US, Iranian Strikes On Ships",
         "link": "https://gcaptain.com/hormuz-traffic-dips-to-lowest-since-may-after-us-iranian-strikes-on-ships/",
@@ -726,26 +776,6 @@
         ],
         "when": "2026-09-06 13:18",
         "supply": true
-      },
-      {
-        "title": "U.S. Forces Destroy One Iranian Tanker and Damage Two More",
-        "link": "https://maritime-executive.com/article/u-s-forces-destroy-one-iranian-tanker-and-damage-two-more",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "aircraft carrier"
-        ],
-        "when": "2026-09-05 15:43",
-        "supply": true
-      },
-      {
-        "title": "Newly-Rebuilt Rescue Boat for New South Wales Suffers Damage in Collision",
-        "link": "https://maritime-executive.com/article/newly-rebuilt-rescue-boat-for-new-south-wales-suffers-damage-in-collision",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "deployment"
-        ],
-        "when": "2026-09-05 12:54",
-        "supply": false
       }
     ]
   }
