@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-08T09:17:46Z",
+  "generated_utc": "2026-09-09T09:20:33Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.77,
-      "rsi": 64.13,
-      "macd": 0.04478,
-      "macd_signal": 0.04274,
-      "macd_hist": 0.00204,
-      "tech_score": 0.186,
-      "macd_component": 0.09,
-      "rsi_component": 0.283,
-      "verdict": "HOLD",
-      "verdict_ar": "انتظار",
-      "state": "NEUTRAL",
-      "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 19,
-      "rationale": "MACD > signal; RSI 64.13; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 64.13؛ OSINT: ضغط صعودي (مراقبة)",
+      "close": 6.7655,
+      "rsi": 64.02,
+      "macd": 0.053,
+      "macd_signal": 0.0444,
+      "macd_hist": 0.00861,
+      "tech_score": 0.332,
+      "macd_component": 0.383,
+      "rsi_component": 0.28,
+      "verdict": "BUY",
+      "verdict_ar": "شراء",
+      "state": "BUY",
+      "state_ar": "شراء",
+      "strength": 48,
+      "rationale": "MACD > signal; RSI 64.02; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 64.02؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-06-12",
           "2026-06-15",
           "2026-06-16",
           "2026-06-17",
@@ -82,10 +81,10 @@
           "2026-09-02",
           "2026-09-03",
           "2026-09-04",
-          "2026-09-08"
+          "2026-09-08",
+          "2026-09-09"
         ],
         "close": [
-          6.4305,
           6.4825,
           6.489,
           6.4815,
@@ -144,10 +143,10 @@
           6.501,
           6.577,
           6.597,
-          6.77
+          6.739,
+          6.7655
         ],
         "macd": [
-          0.05086,
           0.05733,
           0.06226,
           0.06481,
@@ -206,10 +205,10 @@
           0.03062,
           0.02998,
           0.03074,
-          0.04478
+          0.04231,
+          0.053
         ],
         "signal": [
-          0.07757,
           0.07352,
           0.07127,
           0.06997,
@@ -268,10 +267,10 @@
           0.04888,
           0.0451,
           0.04223,
-          0.04274
+          0.04224,
+          0.0444
         ],
         "rsi": [
-          55.89,
           57.71,
           57.95,
           57.55,
@@ -330,34 +329,34 @@
           48.41,
           53.59,
           54.88,
-          64.13
+          62.76,
+          64.02
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 6.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.979,
-      "rsi": 59.94,
-      "macd": 0.03491,
-      "macd_signal": 0.00915,
-      "macd_hist": 0.02577,
-      "tech_score": 0.599,
-      "macd_component": 1.0,
-      "rsi_component": 0.199,
+      "close": 2.888,
+      "rsi": 52.23,
+      "macd": 0.02765,
+      "macd_signal": 0.01204,
+      "macd_hist": 0.01561,
+      "tech_score": 0.371,
+      "macd_component": 0.697,
+      "rsi_component": 0.045,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 75,
-      "rationale": "MACD > signal; RSI 59.94; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 59.94؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 52,
+      "rationale": "MACD > signal; RSI 52.23; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 52.23؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-06-12",
           "2026-06-15",
           "2026-06-16",
           "2026-06-17",
@@ -416,10 +415,10 @@
           "2026-09-02",
           "2026-09-03",
           "2026-09-04",
-          "2026-09-08"
+          "2026-09-08",
+          "2026-09-09"
         ],
         "close": [
-          3.12,
           3.147,
           3.239,
           3.145,
@@ -478,10 +477,10 @@
           2.956,
           2.913,
           2.975,
-          2.979
+          2.916,
+          2.888
         ],
         "macd": [
-          0.07538,
           0.07041,
           0.07305,
           0.06678,
@@ -540,10 +539,10 @@
           0.01952,
           0.02246,
           0.02945,
-          0.03491
+          0.02989,
+          0.02765
         ],
         "signal": [
-          0.09136,
           0.08717,
           0.08435,
           0.08083,
@@ -602,10 +601,10 @@
           -0.01059,
           -0.00398,
           0.0027,
-          0.00915
+          0.00814,
+          0.01204
         ],
         "rsi": [
-          52.88,
           54.25,
           58.68,
           53.03,
@@ -664,18 +663,69 @@
           59.48,
           55.59,
           59.69,
-          59.94
+          54.53,
+          52.23
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 6.0
     }
   ],
   "osint": {
-    "alert_count": 10,
-    "supply_pressure": 9,
+    "alert_count": 7,
+    "supply_pressure": 6,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Iran says it captured US submarine drone in Strait of Hormuz",
+        "link": "https://www.defensenews.com/news/your-military/2026/09/09/iran-says-it-captured-us-submarine-drone-in-strait-of-hormuz/",
+        "source": "Defense News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-09 02:03",
+        "supply": true
+      },
+      {
+        "title": "IRGC Captures U.S. Drone Sub in Strait of Hormuz",
+        "link": "https://maritime-executive.com/article/irgc-captures-u-s-drone-sub-in-strait-of-hormuz",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-08 19:38",
+        "supply": true
+      },
+      {
+        "title": "Europe’s Largest Carbon Capture Facility Opens, Sending CO2 by Ship to North Sea Storage",
+        "link": "https://gcaptain.com/europes-largest-carbon-capture-facility-opens-sending-co2-by-ship-to-north-sea-storage/",
+        "source": "gCaptain",
+        "keywords": [
+          "supply chain"
+        ],
+        "when": "2026-09-08 16:55",
+        "supply": true
+      },
+      {
+        "title": "Suez Canal Revival Gathers Pace as Hormuz Crisis Reroutes Ships",
+        "link": "https://gcaptain.com/suez-canal-revival-gathers-pace-as-hormuz-crisis-reroutes-ships/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-08 16:10",
+        "supply": true
+      },
+      {
+        "title": "Europe Gas Hits Three-Year High as Traders Race to Fill Storage",
+        "link": "https://gcaptain.com/europe-gas-hits-three-year-high-as-traders-race-to-fill-storage/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-08 11:32",
+        "supply": true
+      },
       {
         "title": "Goldman, Rystad See Room for $120 Oil if U.S.-Iran Conflict Continues",
         "link": "https://maritime-executive.com/article/goldman-rystad-see-room-for-120-oil-if-u-s-iran-conflict-continues",
@@ -695,87 +745,6 @@
         ],
         "when": "2026-09-07 16:40",
         "supply": false
-      },
-      {
-        "title": "Tanker Strikes Push Hormuz Traffic to Lowest Since May",
-        "link": "https://www.marinelink.com/news/tanker-strikes-push-hormuz-traffic-lowest-542770",
-        "source": "MarineLink News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-07 09:45",
-        "supply": true
-      },
-      {
-        "title": "China Expands Patrols of Taiwan’s Pacific Coast, Raising Maritime Tensions",
-        "link": "https://gcaptain.com/china-expands-patrols-of-taiwans-pacific-coast-raising-maritime-tensions/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-07 09:44",
-        "supply": true
-      },
-      {
-        "title": "Iran Says to Announce New Restricted Zone in the Gulf in the Coming Days",
-        "link": "https://gcaptain.com/iran-says-to-announce-new-restricted-zone-in-the-gulf-in-the-coming-days/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-07 09:40",
-        "supply": true
-      },
-      {
-        "title": "Hormuz Traffic Dips To Lowest Since May After US, Iranian Strikes On Ships",
-        "link": "https://gcaptain.com/hormuz-traffic-dips-to-lowest-since-may-after-us-iranian-strikes-on-ships/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-07 01:43",
-        "supply": true
-      },
-      {
-        "title": "China Mounts Fresh Campaign To Encircle Taiwan With Patrols",
-        "link": "https://gcaptain.com/china-mounts-fresh-campaign-to-encircle-taiwan-with-patrols/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-06 23:58",
-        "supply": true
-      },
-      {
-        "title": "US Energy Chief Says Navy To Defend Hormuz Until Iran Backs Down",
-        "link": "https://gcaptain.com/us-energy-chief-says-navy-to-defend-hormuz-until-iran-backs-down/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-06 23:18",
-        "supply": true
-      },
-      {
-        "title": "Iran, US Trade Tit-for-Tat Tanker Attacks As War Drags On",
-        "link": "https://gcaptain.com/iran-us-trade-tit-for-tat-tanker-attacks-as-war-drags-on/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-06 13:36",
-        "supply": true
-      },
-      {
-        "title": "US Carrier Abraham Lincoln Departs Thailand After Respite Visit",
-        "link": "https://gcaptain.com/us-carrier-abraham-lincoln-departs-thailand-after-respite-visit/",
-        "source": "gCaptain",
-        "keywords": [
-          "deployment",
-          "aircraft carrier"
-        ],
-        "when": "2026-09-06 13:18",
-        "supply": true
       }
     ]
   }
