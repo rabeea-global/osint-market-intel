@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-14T10:14:59Z",
+  "generated_utc": "2026-09-15T09:43:52Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.43,
-      "rsi": 43.84,
-      "macd": 0.01205,
-      "macd_signal": 0.03464,
-      "macd_hist": -0.02259,
-      "tech_score": -0.561,
-      "macd_component": -0.998,
-      "rsi_component": -0.123,
+      "close": 6.3765,
+      "rsi": 42.46,
+      "macd": -0.00941,
+      "macd_signal": 0.02455,
+      "macd_hist": -0.03396,
+      "tech_score": -0.575,
+      "macd_component": -1.0,
+      "rsi_component": -0.151,
       "verdict": "SELL",
       "verdict_ar": "بيع",
       "state": "SELL",
       "state_ar": "بيع",
-      "strength": 56,
-      "rationale": "MACD < signal; RSI 43.84; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 43.84؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "strength": 57,
+      "rationale": "MACD < signal; RSI 42.46; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 42.46؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-06-18",
           "2026-06-22",
           "2026-06-23",
           "2026-06-24",
@@ -82,10 +81,10 @@
           "2026-09-09",
           "2026-09-10",
           "2026-09-11",
-          "2026-09-14"
+          "2026-09-14",
+          "2026-09-15"
         ],
         "close": [
-          6.3745,
           6.3565,
           6.141,
           5.943,
@@ -144,10 +143,10 @@
           6.8035,
           6.467,
           6.4695,
-          6.43
+          6.33,
+          6.3765
         ],
         "macd": [
-          0.05762,
           0.04982,
           0.02596,
           -0.00883,
@@ -206,10 +205,10 @@
           0.05604,
           0.03931,
           0.02596,
-          0.01205
+          0.00407,
+          -0.00941
         ],
         "signal": [
-          0.06761,
           0.06405,
           0.05643,
           0.04338,
@@ -268,10 +267,10 @@
           0.045,
           0.04387,
           0.04028,
-          0.03464
+          0.03304,
+          0.02455
         ],
         "rsi": [
-          51.45,
           50.58,
           41.5,
           35.23,
@@ -330,34 +329,34 @@
           65.68,
           45.54,
           45.67,
-          43.84
+          39.81,
+          42.46
         ]
       },
-      "intel_pressure": 2.0
+      "intel_pressure": 6.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.891,
-      "rsi": 52.93,
-      "macd": 0.01386,
-      "macd_signal": 0.01265,
-      "macd_hist": 0.00121,
-      "tech_score": 0.056,
-      "macd_component": 0.054,
-      "rsi_component": 0.059,
+      "close": 2.877,
+      "rsi": 51.69,
+      "macd": 0.01377,
+      "macd_signal": 0.01294,
+      "macd_hist": 0.00084,
+      "tech_score": 0.036,
+      "macd_component": 0.038,
+      "rsi_component": 0.034,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 6,
-      "rationale": "MACD > signal; RSI 52.93; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 52.93؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 4,
+      "rationale": "MACD > signal; RSI 51.69; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 51.69؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-06-18",
           "2026-06-22",
           "2026-06-23",
           "2026-06-24",
@@ -416,10 +415,10 @@
           "2026-09-09",
           "2026-09-10",
           "2026-09-11",
-          "2026-09-14"
+          "2026-09-14",
+          "2026-09-15"
         ],
         "close": [
-          3.233,
           3.253,
           3.147,
           3.221,
@@ -478,10 +477,10 @@
           2.822,
           2.834,
           2.831,
-          2.891
+          2.896,
+          2.877
         ],
         "macd": [
-          0.06874,
           0.07057,
           0.06275,
           0.06181,
@@ -540,10 +539,10 @@
           0.0224,
           0.01722,
           0.01273,
-          0.01386
+          0.01426,
+          0.01377
         ],
         "signal": [
-          0.07918,
           0.07746,
           0.07452,
           0.07197,
@@ -602,10 +601,10 @@
           0.011,
           0.01225,
           0.01234,
-          0.01265
+          0.01273,
+          0.01294
         ],
         "rsi": [
-          57.72,
           58.62,
           52.24,
           55.86,
@@ -664,36 +663,87 @@
           47.5,
           48.42,
           48.19,
-          52.93
+          53.29,
+          51.69
         ]
       },
-      "intel_pressure": 2.0
+      "intel_pressure": 6.0
     }
   ],
   "osint": {
-    "alert_count": 2,
-    "supply_pressure": 2,
+    "alert_count": 7,
+    "supply_pressure": 6,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Crew Of Vessel Attacked In Hormuz Strait Evacuated",
-        "link": "https://gcaptain.com/crew-of-vessel-attacked-in-hormuz-strait-evacuated/",
+        "title": "US Air Force secretary reveals deployment of on-orbit space control weapons",
+        "link": "https://www.defensenews.com/news/your-military/2026/09/14/us-air-force-secretary-reveals-deployment-of-on-orbit-space-control-weapons/",
+        "source": "Defense News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-09-14 22:25",
+        "supply": false
+      },
+      {
+        "title": "U.S. Rejects Iran’s Mine Claim as Hormuz Shipping Threat Remains Severe",
+        "link": "https://gcaptain.com/u-s-rejects-irans-mine-claim-as-hormuz-shipping-threat-remains-severe/",
         "source": "gCaptain",
         "keywords": [
           "strait"
         ],
-        "when": "2026-09-13 14:46",
+        "when": "2026-09-14 20:28",
         "supply": true
       },
       {
-        "title": "US Limits Air Defense Time Slots For Tankers Sailing Through Hormuz",
-        "link": "https://gcaptain.com/us-limits-air-defense-time-slots-for-tankers-sailing-through-hormuz/",
+        "title": "Oman's Strait of Hormuz Conference Implodes",
+        "link": "https://maritime-executive.com/article/oman-s-strait-of-hormuz-conference-implodes",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-14 19:37",
+        "supply": true
+      },
+      {
+        "title": "Oil Tanker Rates Top $1 Million a Day as Hormuz War Squeezes Fleet",
+        "link": "https://gcaptain.com/oil-tanker-rates-top-1-million-a-day-as-hormuz-war-squeezes-fleet/",
         "source": "gCaptain",
         "keywords": [
           "strait"
         ],
-        "when": "2026-09-13 14:20",
+        "when": "2026-09-14 18:24",
+        "supply": true
+      },
+      {
+        "title": "Iran Expands Threats Against Shipping to P&I and Class Societies",
+        "link": "https://maritime-executive.com/article/iran-expands-threats-against-shipping-to-p-i-and-class-societies",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-14 17:30",
+        "supply": true
+      },
+      {
+        "title": "Swedish Club Warns Cape Horn Is No Simple Panama Canal Alternative",
+        "link": "https://gcaptain.com/swedish-club-warns-cape-horn-is-no-simple-panama-canal-alternative/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-14 16:17",
+        "supply": true
+      },
+      {
+        "title": "LR and Partners Develop Hybrid Electric LNG Carrier Design",
+        "link": "https://www.marinelink.com/news/lr-partners-develop-hybrid-electric-lng-542921",
+        "source": "MarineLink News",
+        "keywords": [
+          "lng carrier"
+        ],
+        "when": "2026-09-14 15:26",
         "supply": true
       }
     ]
