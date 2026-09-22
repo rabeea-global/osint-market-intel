@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-21T10:20:46Z",
+  "generated_utc": "2026-09-22T09:35:19Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.7765,
-      "rsi": 60.76,
-      "macd": 0.02009,
-      "macd_signal": 0.01145,
-      "macd_hist": 0.00864,
-      "tech_score": 0.311,
-      "macd_component": 0.406,
-      "rsi_component": 0.215,
+      "close": 6.838,
+      "rsi": 63.1,
+      "macd": 0.03456,
+      "macd_signal": 0.01492,
+      "macd_hist": 0.01964,
+      "tech_score": 0.612,
+      "macd_component": 0.963,
+      "rsi_component": 0.262,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 46,
-      "rationale": "MACD > signal; RSI 60.76; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 60.76؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 76,
+      "rationale": "MACD > signal; RSI 63.1; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 63.1؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-06-26",
           "2026-06-29",
           "2026-06-30",
           "2026-07-01",
@@ -82,10 +81,10 @@
           "2026-09-16",
           "2026-09-17",
           "2026-09-18",
-          "2026-09-21"
+          "2026-09-21",
+          "2026-09-22"
         ],
         "close": [
-          6.1415,
           6.0975,
           6.1925,
           6.1235,
@@ -144,10 +143,10 @@
           6.4315,
           6.5865,
           6.615,
-          6.7765
+          6.6865,
+          6.838
         ],
         "macd": [
-          -0.03159,
           -0.04059,
           -0.03961,
           -0.04389,
@@ -206,10 +205,10 @@
           -0.01596,
           -0.00805,
           0.0005,
-          0.02009
+          0.01291,
+          0.03456
         ],
         "signal": [
-          0.01931,
           0.00733,
           -0.00206,
           -0.01042,
@@ -268,10 +267,10 @@
           0.01637,
           0.01149,
           0.00929,
-          0.01145
+          0.01001,
+          0.01492
         ],
         "rsi": [
-          44.68,
           43.13,
           47.38,
           44.76,
@@ -330,34 +329,34 @@
           45.55,
           53.1,
           54.35,
-          60.76
+          57.43,
+          63.1
         ]
       },
-      "intel_pressure": 4.0
+      "intel_pressure": 5.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.878,
-      "rsi": 50.87,
-      "macd": 0.01634,
-      "macd_signal": 0.01577,
-      "macd_hist": 0.00058,
-      "tech_score": 0.022,
-      "macd_component": 0.026,
-      "rsi_component": 0.017,
+      "close": 3.002,
+      "rsi": 59.51,
+      "macd": 0.02181,
+      "macd_signal": 0.01644,
+      "macd_hist": 0.00537,
+      "tech_score": 0.215,
+      "macd_component": 0.239,
+      "rsi_component": 0.19,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 2,
-      "rationale": "MACD > signal; RSI 50.87; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 50.87؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 22,
+      "rationale": "MACD > signal; RSI 59.51; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 59.51؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-06-26",
           "2026-06-29",
           "2026-06-30",
           "2026-07-01",
@@ -416,10 +415,10 @@
           "2026-09-16",
           "2026-09-17",
           "2026-09-18",
-          "2026-09-21"
+          "2026-09-21",
+          "2026-09-22"
         ],
         "close": [
-          3.231,
           3.181,
           3.275,
           3.22,
@@ -478,10 +477,10 @@
           2.891,
           2.901,
           2.912,
-          2.878
+          2.836,
+          3.002
         ],
         "macd": [
-          0.06772,
           0.06037,
           0.06142,
           0.05716,
@@ -540,10 +539,10 @@
           0.01695,
           0.01741,
           0.01845,
-          0.01634
+          0.01299,
+          0.02181
         ],
         "signal": [
-          0.07192,
           0.06961,
           0.06797,
           0.06581,
@@ -602,10 +601,10 @@
           0.01429,
           0.01491,
           0.01562,
-          0.01577
+          0.0151,
+          0.01644
         ],
         "rsi": [
-          54.95,
           52.32,
           56.53,
           53.55,
@@ -664,36 +663,57 @@
           52.49,
           53.31,
           54.23,
-          50.87
+          47.26,
+          59.51
         ]
       },
-      "intel_pressure": 4.0
+      "intel_pressure": 5.0
     }
   ],
   "osint": {
     "alert_count": 5,
-    "supply_pressure": 4,
+    "supply_pressure": 5,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Hormuz Ship Traffic Slumps as Middle East Conflict Drags On",
-        "link": "https://www.marinelink.com/news/hormuz-ship-traffic-slumps-middle-east-543112",
-        "source": "MarineLink News",
+        "title": "CENTCOM's Commander Highlights Successes of U.S. Blockade",
+        "link": "https://maritime-executive.com/article/centcom-s-commander-highlights-successes-of-u-s-blockade",
+        "source": "The Maritime Executive",
         "keywords": [
-          "strait"
+          "blockade"
         ],
-        "when": "2026-09-21 08:45",
+        "when": "2026-09-21 22:23",
         "supply": true
       },
       {
-        "title": "Qatar Energy Chief Says Bessent ‘Wrong’ About Hormuz Future",
-        "link": "https://gcaptain.com/qatar-energy-chief-says-bessent-wrong-about-hormuz-future/",
+        "title": "Iran Keeps Up Pressure, Hitting Another Tanker as US Asserts Hormuz is Open",
+        "link": "https://maritime-executive.com/article/iran-keeps-up-pressure-hitting-another-tanker-as-us-asserts-hormuz-is-open",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-21 18:07",
+        "supply": true
+      },
+      {
+        "title": "Two More Tankers Hit in Strait of Hormuz as Attacks Mount",
+        "link": "https://gcaptain.com/two-more-tankers-hit-in-strait-of-hormuz-as-attacks-mount/",
         "source": "gCaptain",
         "keywords": [
           "strait"
         ],
-        "when": "2026-09-20 22:39",
+        "when": "2026-09-21 16:06",
+        "supply": true
+      },
+      {
+        "title": "Tanker Hit by Projectile in Strait of Hormuz, UKMTO Reports",
+        "link": "https://www.marinelink.com/news/tanker-hit-projectile-strait-hormuz-ukmto-543118",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-21 10:03",
         "supply": true
       },
       {
@@ -705,26 +725,6 @@
         ],
         "when": "2026-09-20 18:52",
         "supply": true
-      },
-      {
-        "title": "Indonesia Got A Free Aircraft Carrier; Fixes Will Cost Millions",
-        "link": "https://gcaptain.com/indonesia-got-a-free-aircraft-carrier-fixes-will-cost-millions/",
-        "source": "gCaptain",
-        "keywords": [
-          "aircraft carrier"
-        ],
-        "when": "2026-09-20 15:27",
-        "supply": true
-      },
-      {
-        "title": "Carrier USS Abraham Lincoln Pulls into Guam for Logistics Stop, Deployment Now at 302 Days",
-        "link": "https://news.usni.org/2026/09/19/carrier-uss-abraham-lincoln-pulls-into-guam-for-logistics-stop-deployment-now-at-302-days",
-        "source": "USNI News",
-        "keywords": [
-          "deployment"
-        ],
-        "when": "2026-09-19 11:42",
-        "supply": false
       }
     ]
   }
