@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-22T09:35:19Z",
+  "generated_utc": "2026-09-23T09:40:36Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.838,
-      "rsi": 63.1,
-      "macd": 0.03456,
-      "macd_signal": 0.01492,
-      "macd_hist": 0.01964,
-      "tech_score": 0.612,
-      "macd_component": 0.963,
-      "rsi_component": 0.262,
+      "close": 6.8285,
+      "rsi": 62.96,
+      "macd": 0.04554,
+      "macd_signal": 0.02005,
+      "macd_hist": 0.0255,
+      "tech_score": 0.63,
+      "macd_component": 1.0,
+      "rsi_component": 0.259,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 76,
-      "rationale": "MACD > signal; RSI 63.1; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 63.1؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 78,
+      "rationale": "MACD > signal; RSI 62.96; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 62.96؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-06-29",
           "2026-06-30",
           "2026-07-01",
           "2026-07-02",
@@ -82,10 +81,10 @@
           "2026-09-17",
           "2026-09-18",
           "2026-09-21",
-          "2026-09-22"
+          "2026-09-22",
+          "2026-09-23"
         ],
         "close": [
-          6.0975,
           6.1925,
           6.1235,
           6.1145,
@@ -144,10 +143,10 @@
           6.5865,
           6.615,
           6.6865,
-          6.838
+          6.7595,
+          6.8285
         ],
         "macd": [
-          -0.04059,
           -0.03961,
           -0.04389,
           -0.04746,
@@ -206,10 +205,10 @@
           -0.00805,
           0.0005,
           0.01291,
-          0.03456
+          0.0283,
+          0.04554
         ],
         "signal": [
-          0.00733,
           -0.00206,
           -0.01042,
           -0.01783,
@@ -268,10 +267,10 @@
           0.01149,
           0.00929,
           0.01001,
-          0.01492
+          0.01367,
+          0.02005
         ],
         "rsi": [
-          43.13,
           47.38,
           44.76,
           44.42,
@@ -330,34 +329,34 @@
           53.1,
           54.35,
           57.43,
-          63.1
+          60.36,
+          62.96
         ]
       },
-      "intel_pressure": 5.0
+      "intel_pressure": 6.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.002,
-      "rsi": 59.51,
-      "macd": 0.02181,
-      "macd_signal": 0.01644,
-      "macd_hist": 0.00537,
-      "tech_score": 0.215,
-      "macd_component": 0.239,
-      "rsi_component": 0.19,
+      "close": 3.19,
+      "rsi": 68.55,
+      "macd": 0.04119,
+      "macd_signal": 0.02092,
+      "macd_hist": 0.02027,
+      "tech_score": 0.633,
+      "macd_component": 0.896,
+      "rsi_component": 0.371,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
-      "state": "NEUTRAL",
-      "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 22,
-      "rationale": "MACD > signal; RSI 59.51; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 59.51؛ OSINT: ضغط صعودي (مراقبة)",
+      "state": "OVERBOUGHT",
+      "state_ar": "تشبّع شرائي — انتظار تصحيح",
+      "strength": 63,
+      "rationale": "MACD > signal; RSI 68.55; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 68.55؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-06-29",
           "2026-06-30",
           "2026-07-01",
           "2026-07-02",
@@ -416,10 +415,10 @@
           "2026-09-17",
           "2026-09-18",
           "2026-09-21",
-          "2026-09-22"
+          "2026-09-22",
+          "2026-09-23"
         ],
         "close": [
-          3.181,
           3.275,
           3.22,
           3.196,
@@ -478,10 +477,10 @@
           2.901,
           2.912,
           2.836,
-          3.002
+          2.965,
+          3.19
         ],
         "macd": [
-          0.06037,
           0.06142,
           0.05716,
           0.05125,
@@ -540,10 +539,10 @@
           0.01741,
           0.01845,
           0.01299,
-          0.02181
+          0.01886,
+          0.04119
         ],
         "signal": [
-          0.06961,
           0.06797,
           0.06581,
           0.0629,
@@ -602,10 +601,10 @@
           0.01491,
           0.01562,
           0.0151,
-          0.01644
+          0.01585,
+          0.02092
         ],
         "rsi": [
-          52.32,
           56.53,
           53.55,
           52.25,
@@ -664,18 +663,59 @@
           53.31,
           54.23,
           47.26,
-          59.51
+          57.3,
+          68.55
         ]
       },
-      "intel_pressure": 5.0
+      "intel_pressure": 6.0
     }
   ],
   "osint": {
-    "alert_count": 5,
-    "supply_pressure": 5,
+    "alert_count": 6,
+    "supply_pressure": 6,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Carrier USS Abraham Lincoln Makes Brief Stop in Guam",
+        "link": "https://maritime-executive.com/article/carrier-uss-abraham-lincoln-makes-brief-stop-in-guam",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-09-22 19:03",
+        "supply": true
+      },
+      {
+        "title": "Euro Zone Bond Yields Drop as Iran Considers Reopening Hormuz",
+        "link": "https://www.marinelink.com/news/euro-zone-bond-yields-drop-iran-considers-543180",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-22 17:16",
+        "supply": true
+      },
+      {
+        "title": "The Other Hormuz: Black Sea Blockade Threatens a Food Supply Shock",
+        "link": "https://gcaptain.com/the-other-hormuz-black-sea-blockade-threatens-a-food-supply-shock/",
+        "source": "gCaptain",
+        "keywords": [
+          "blockade"
+        ],
+        "when": "2026-09-22 16:55",
+        "supply": true
+      },
+      {
+        "title": "France Mulls New UN Security Council Resolution on Hormuz",
+        "link": "https://gcaptain.com/france-mulls-new-un-security-council-resolution-on-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-22 16:34",
+        "supply": true
+      },
       {
         "title": "CENTCOM's Commander Highlights Successes of U.S. Blockade",
         "link": "https://maritime-executive.com/article/centcom-s-commander-highlights-successes-of-u-s-blockade",
@@ -694,36 +734,6 @@
           "strait"
         ],
         "when": "2026-09-21 18:07",
-        "supply": true
-      },
-      {
-        "title": "Two More Tankers Hit in Strait of Hormuz as Attacks Mount",
-        "link": "https://gcaptain.com/two-more-tankers-hit-in-strait-of-hormuz-as-attacks-mount/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-21 16:06",
-        "supply": true
-      },
-      {
-        "title": "Tanker Hit by Projectile in Strait of Hormuz, UKMTO Reports",
-        "link": "https://www.marinelink.com/news/tanker-hit-projectile-strait-hormuz-ukmto-543118",
-        "source": "MarineLink News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-21 10:03",
-        "supply": true
-      },
-      {
-        "title": "IRGC Profiteer Babak Zanjani Skims Iran’s Hormuz Tolls",
-        "link": "https://maritime-executive.com/article/irgc-profiteer-babak-zanjani-skims-iran-s-hormuz-tolls",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-20 18:52",
         "supply": true
       }
     ]
