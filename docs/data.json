@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-28T11:22:39Z",
+  "generated_utc": "2026-09-29T11:00:56Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.629,
-      "rsi": 52.31,
-      "macd": 0.0403,
-      "macd_signal": 0.02926,
-      "macd_hist": 0.01105,
-      "tech_score": 0.33,
-      "macd_component": 0.614,
-      "rsi_component": 0.046,
-      "verdict": "BUY",
-      "verdict_ar": "شراء",
-      "state": "BUY",
-      "state_ar": "شراء",
-      "strength": 48,
-      "rationale": "MACD > signal; RSI 52.31; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 52.31؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "close": 6.611,
+      "rsi": 51.41,
+      "macd": 0.03191,
+      "macd_signal": 0.02898,
+      "macd_hist": 0.00293,
+      "tech_score": 0.097,
+      "macd_component": 0.166,
+      "rsi_component": 0.028,
+      "verdict": "HOLD",
+      "verdict_ar": "انتظار",
+      "state": "NEUTRAL",
+      "state_ar": "محايد — لا أفضلية واضحة",
+      "strength": 10,
+      "rationale": "MACD > signal; RSI 51.41; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 51.41؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-06",
           "2026-07-07",
           "2026-07-08",
           "2026-07-09",
@@ -82,10 +81,10 @@
           "2026-09-23",
           "2026-09-24",
           "2026-09-25",
-          "2026-09-28"
+          "2026-09-28",
+          "2026-09-29"
         ],
         "close": [
-          6.178,
           6.1715,
           6.0545,
           6.215,
@@ -144,10 +143,10 @@
           6.678,
           6.7185,
           6.6955,
-          6.629
+          6.566,
+          6.611
         ],
         "macd": [
-          -0.04483,
           -0.04262,
           -0.04974,
           -0.04195,
@@ -206,10 +205,10 @@
           0.03353,
           0.04049,
           0.04364,
-          0.0403
+          0.03528,
+          0.03191
         ],
         "signal": [
-          -0.02344,
           -0.02728,
           -0.03177,
           -0.03381,
@@ -268,10 +267,10 @@
           0.01764,
           0.02221,
           0.0265,
-          0.02926
+          0.02825,
+          0.02898
         ],
         "rsi": [
-          48.06,
           47.78,
           42.79,
           50.43,
@@ -330,34 +329,34 @@
           55.75,
           57.49,
           56.14,
-          52.31
+          49.14,
+          51.41
         ]
       },
-      "intel_pressure": 5.0
+      "intel_pressure": 9.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.107,
-      "rsi": 58.94,
-      "macd": 0.07301,
-      "macd_signal": 0.0424,
-      "macd_hist": 0.0306,
-      "tech_score": 0.589,
-      "macd_component": 1.0,
-      "rsi_component": 0.179,
+      "close": 3.079,
+      "rsi": 56.52,
+      "macd": 0.06558,
+      "macd_signal": 0.04567,
+      "macd_hist": 0.0199,
+      "tech_score": 0.484,
+      "macd_component": 0.838,
+      "rsi_component": 0.13,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 74,
-      "rationale": "MACD > signal; RSI 58.94; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 58.94؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 63,
+      "rationale": "MACD > signal; RSI 56.52; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 56.52؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-07-06",
           "2026-07-07",
           "2026-07-08",
           "2026-07-09",
@@ -416,10 +415,10 @@
           "2026-09-23",
           "2026-09-24",
           "2026-09-25",
-          "2026-09-28"
+          "2026-09-28",
+          "2026-09-29"
         ],
         "close": [
-          3.245,
           3.265,
           3.212,
           3.012,
@@ -478,10 +477,10 @@
           3.023,
           3.297,
           3.196,
-          3.107
+          3.0,
+          3.079
         ],
         "macd": [
-          0.05014,
           0.05013,
           0.04532,
           0.02509,
@@ -540,10 +539,10 @@
           0.02787,
           0.05647,
           0.07017,
-          0.07301
+          0.06447,
+          0.06558
         ],
         "signal": [
-          0.06059,
           0.0585,
           0.05586,
           0.04971,
@@ -602,10 +601,10 @@
           0.01826,
           0.0259,
           0.03475,
-          0.0424
+          0.0407,
+          0.04567
         ],
         "rsi": [
-          54.5,
           55.49,
           52.23,
           42.17,
@@ -664,27 +663,109 @@
           60.9,
           72.65,
           64.91,
-          58.94
+          53.08,
+          56.52
         ]
       },
-      "intel_pressure": 5.0
+      "intel_pressure": 9.0
     }
   ],
   "osint": {
-    "alert_count": 7,
-    "supply_pressure": 5,
+    "alert_count": 14,
+    "supply_pressure": 9,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Qatar-Linked LNG Tankers Resume Hormuz Transits",
-        "link": "https://www.marinelink.com/news/qatarlinked-lng-tankers-resume-hormuz-543290",
-        "source": "MarineLink News",
+        "title": "Four Injured After Landing Mishap Aboard USS Dwight D. Eisenhower, Crew Safely Recovered",
+        "link": "https://news.usni.org/2026/09/28/four-injured-after-landing-mishap-aboard-uss-dwight-d-eisenhower-crew-safely-recovered",
+        "source": "USNI News",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-09-29 03:08",
+        "supply": true
+      },
+      {
+        "title": "EU Needs More Ships for Red Sea; European Navies Adjust Hormuz Deployments",
+        "link": "https://news.usni.org/2026/09/28/eu-needs-more-ships-for-red-sea-european-navies-adjust-hormuz-deployments",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-09-28 20:55",
+        "supply": false
+      },
+      {
+        "title": "The Caspian Sea is Busy Between Russia and Iran",
+        "link": "https://maritime-executive.com/article/the-caspian-sea-is-busy-between-russia-and-iran",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "blockade"
+        ],
+        "when": "2026-09-28 20:01",
+        "supply": true
+      },
+      {
+        "title": "Iran Threatens Vessel Charterers as Dispute Over Hormuz Continues",
+        "link": "https://maritime-executive.com/article/iran-threatens-vessel-charterers-as-dispute-over-hormuz-continues",
+        "source": "The Maritime Executive",
         "keywords": [
           "strait"
         ],
-        "when": "2026-09-28 10:27",
+        "when": "2026-09-28 19:44",
         "supply": true
+      },
+      {
+        "title": "China Claims Expanded Zone Around Scarborough Shoal, Deploys New Drone",
+        "link": "https://news.usni.org/2026/09/28/china-claims-expanded-zone-around-scarborough-shoal-deploys-new-drone",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-09-28 18:51",
+        "supply": false
+      },
+      {
+        "title": "Qatar Extends LNG Force Majeure to Edison, Some Asian Clients",
+        "link": "https://www.marinelink.com/news/qatar-extends-lng-force-majeure-edison-543305",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait",
+          "force majeure"
+        ],
+        "when": "2026-09-28 18:15",
+        "supply": true
+      },
+      {
+        "title": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+        "link": "https://gcaptain.com/europe-draws-more-lng-as-hormuz-crisis-tightens-global-market/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-28 16:58",
+        "supply": true
+      },
+      {
+        "title": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
+        "link": "https://gcaptain.com/nbc-news-eight-marines-injured-in-previously-undisclosed-iranian-attack-in-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-28 15:16",
+        "supply": true
+      },
+      {
+        "title": "USS Theodore Roosevelt Deploys From San Diego, USS Abraham Lincoln Near Hawaii",
+        "link": "https://news.usni.org/2026/09/28/uss-theodore-roosevelt-deploys-from-san-diego-uss-abraham-lincoln-near-hawaii",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-09-28 14:13",
+        "supply": false
       },
       {
         "title": "Damen Delivers Cutter Suction Dredger 600 to 4Clans Nig Ltd",
@@ -736,16 +817,6 @@
         ],
         "when": "2026-09-27 15:00",
         "supply": false
-      },
-      {
-        "title": "Trump Rejects Iran Proposal On Hormuz As Houthis Target Riyadh",
-        "link": "https://gcaptain.com/trump-rejects-iran-proposal-on-hormuz-as-houthis-target-riyadh/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-26 18:09",
-        "supply": true
       }
     ]
   }
