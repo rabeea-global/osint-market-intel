@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-09-29T11:00:56Z",
+  "generated_utc": "2026-09-30T10:51:08Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.611,
-      "rsi": 51.41,
-      "macd": 0.03191,
-      "macd_signal": 0.02898,
-      "macd_hist": 0.00293,
-      "tech_score": 0.097,
-      "macd_component": 0.166,
-      "rsi_component": 0.028,
+      "close": 6.648,
+      "rsi": 53.34,
+      "macd": 0.02771,
+      "macd_signal": 0.02787,
+      "macd_hist": -0.00016,
+      "tech_score": 0.029,
+      "macd_component": -0.009,
+      "rsi_component": 0.067,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 10,
-      "rationale": "MACD > signal; RSI 51.41; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 51.41؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 3,
+      "rationale": "MACD < signal; RSI 53.34; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 53.34؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-07",
           "2026-07-08",
           "2026-07-09",
           "2026-07-10",
@@ -82,10 +81,10 @@
           "2026-09-24",
           "2026-09-25",
           "2026-09-28",
-          "2026-09-29"
+          "2026-09-29",
+          "2026-09-30"
         ],
         "close": [
-          6.1715,
           6.0545,
           6.215,
           6.2335,
@@ -144,10 +143,10 @@
           6.7185,
           6.6955,
           6.566,
-          6.611
+          6.5435,
+          6.648
         ],
         "macd": [
-          -0.04262,
           -0.04974,
           -0.04195,
           -0.0339,
@@ -206,10 +205,10 @@
           0.04049,
           0.04364,
           0.03528,
-          0.03191
+          0.02653,
+          0.02771
         ],
         "signal": [
-          -0.02728,
           -0.03177,
           -0.03381,
           -0.03383,
@@ -268,10 +267,10 @@
           0.02221,
           0.0265,
           0.02825,
-          0.02898
+          0.02791,
+          0.02787
         ],
         "rsi": [
-          47.78,
           42.79,
           50.43,
           51.24,
@@ -330,34 +329,34 @@
           57.49,
           56.14,
           49.14,
-          51.41
+          48.02,
+          53.34
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 8.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.079,
-      "rsi": 56.52,
-      "macd": 0.06558,
-      "macd_signal": 0.04567,
-      "macd_hist": 0.0199,
-      "tech_score": 0.484,
-      "macd_component": 0.838,
-      "rsi_component": 0.13,
-      "verdict": "BUY",
-      "verdict_ar": "شراء",
-      "state": "BUY",
-      "state_ar": "شراء",
-      "strength": 63,
-      "rationale": "MACD > signal; RSI 56.52; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 56.52؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "close": 3.036,
+      "rsi": 54.8,
+      "macd": 0.05808,
+      "macd_signal": 0.04729,
+      "macd_hist": 0.01079,
+      "tech_score": 0.275,
+      "macd_component": 0.455,
+      "rsi_component": 0.096,
+      "verdict": "HOLD",
+      "verdict_ar": "انتظار",
+      "state": "NEUTRAL",
+      "state_ar": "محايد — لا أفضلية واضحة",
+      "strength": 28,
+      "rationale": "MACD > signal; RSI 54.8; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 54.8؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-07",
           "2026-07-08",
           "2026-07-09",
           "2026-07-10",
@@ -416,10 +415,10 @@
           "2026-09-24",
           "2026-09-25",
           "2026-09-28",
-          "2026-09-29"
+          "2026-09-29",
+          "2026-09-30"
         ],
         "close": [
-          3.265,
           3.212,
           3.012,
           2.94,
@@ -478,10 +477,10 @@
           3.297,
           3.196,
           3.0,
-          3.079
+          3.011,
+          3.036
         ],
         "macd": [
-          0.05013,
           0.04532,
           0.02509,
           0.0032,
@@ -540,10 +539,10 @@
           0.05647,
           0.07017,
           0.06447,
-          0.06558
+          0.06015,
+          0.05808
         ],
         "signal": [
-          0.0585,
           0.05586,
           0.04971,
           0.04041,
@@ -602,10 +601,10 @@
           0.0259,
           0.03475,
           0.0407,
-          0.04567
+          0.04459,
+          0.04729
         ],
         "rsi": [
-          55.49,
           52.23,
           42.17,
           39.24,
@@ -664,20 +663,81 @@
           72.65,
           64.91,
           53.08,
-          56.52
+          53.6,
+          54.8
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 8.0
     }
   ],
   "osint": {
-    "alert_count": 14,
-    "supply_pressure": 9,
+    "alert_count": 12,
+    "supply_pressure": 8,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Four Injured After Landing Mishap Aboard USS Dwight D. Eisenhower, Crew Safely Recovered",
+        "title": "Why the Pentagon just dropped $450M on tungsten mining",
+        "link": "https://www.defensenews.com/news/pentagon-congress/2026/09/30/why-the-pentagon-just-dropped-450m-on-tungsten-mining/",
+        "source": "Defense News",
+        "keywords": [
+          "supply chain"
+        ],
+        "when": "2026-09-30 00:03",
+        "supply": true
+      },
+      {
+        "title": "UPDATED: Navy Partially Accepts Carrier John F. Kennedy, HII Newport News Awarded USS Harry S. Truman Overhaul Contract",
+        "link": "https://news.usni.org/2026/09/29/navy-partially-accepts-carrier-john-f-kennedy-from-hii-newport-news-shipbuilding",
+        "source": "USNI News",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-09-29 19:00",
+        "supply": true
+      },
+      {
+        "title": "Landing Mishap Aboard Carrier USS Dwight D. Eisenhower Injures Four",
+        "link": "https://maritime-executive.com/article/landing-mishap-aboard-carrier-uss-dwight-d-eisenhower-injures-four",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-09-29 18:16",
+        "supply": true
+      },
+      {
+        "title": "Kuwaiti Tanker Struck in the Strait of Hormuz",
+        "link": "https://maritime-executive.com/article/kuwaiti-tanker-struck-in-the-strait-of-hormuz",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-29 17:15",
+        "supply": true
+      },
+      {
+        "title": "Makin Island Amphibious Ready Group Deploys from San Diego",
+        "link": "https://news.usni.org/2026/09/29/makin-island-amphibious-ready-group-deploys-from-san-diego",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-09-29 16:40",
+        "supply": false
+      },
+      {
+        "title": "Fog of War Deepens in Hormuz as Ship Attacks Go Unreported for Days",
+        "link": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ship-attacks-go-unreported-for-days/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-09-29 15:53",
+        "supply": true
+      },
+      {
+        "title": "UPDATED: Four Injured After Growler Landing Mishap Aboard USS Dwight D. Eisenhower, Crew Safely Recovered",
         "link": "https://news.usni.org/2026/09/28/four-injured-after-landing-mishap-aboard-uss-dwight-d-eisenhower-crew-safely-recovered",
         "source": "USNI News",
         "keywords": [
@@ -727,37 +787,6 @@
         "supply": false
       },
       {
-        "title": "Qatar Extends LNG Force Majeure to Edison, Some Asian Clients",
-        "link": "https://www.marinelink.com/news/qatar-extends-lng-force-majeure-edison-543305",
-        "source": "MarineLink News",
-        "keywords": [
-          "strait",
-          "force majeure"
-        ],
-        "when": "2026-09-28 18:15",
-        "supply": true
-      },
-      {
-        "title": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
-        "link": "https://gcaptain.com/europe-draws-more-lng-as-hormuz-crisis-tightens-global-market/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-28 16:58",
-        "supply": true
-      },
-      {
-        "title": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
-        "link": "https://gcaptain.com/nbc-news-eight-marines-injured-in-previously-undisclosed-iranian-attack-in-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-28 15:16",
-        "supply": true
-      },
-      {
         "title": "USS Theodore Roosevelt Deploys From San Diego, USS Abraham Lincoln Near Hawaii",
         "link": "https://news.usni.org/2026/09/28/uss-theodore-roosevelt-deploys-from-san-diego-uss-abraham-lincoln-near-hawaii",
         "source": "USNI News",
@@ -765,57 +794,6 @@
           "deployment"
         ],
         "when": "2026-09-28 14:13",
-        "supply": false
-      },
-      {
-        "title": "Damen Delivers Cutter Suction Dredger 600 to 4Clans Nig Ltd",
-        "link": "https://maritime-executive.com/article/damen-delivers-cutter-suction-dredger-600-to-4clans-nig-ltd",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "deployment"
-        ],
-        "when": "2026-09-28 03:29",
-        "supply": false
-      },
-      {
-        "title": "Report: Eight U.S. Marines Were Injured in Iranian Strike on a Ship",
-        "link": "https://maritime-executive.com/article/report-eight-u-s-marines-were-injured-in-iranian-strike-on-a-ship",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-28 02:53",
-        "supply": true
-      },
-      {
-        "title": "Iran Says Won’t Soften Demands As Trump Rejects Hormuz Offer",
-        "link": "https://gcaptain.com/iran-says-wont-soften-demands-as-trump-rejects-hormuz-offer/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-09-27 20:07",
-        "supply": true
-      },
-      {
-        "title": "Iran is Overestimating its Bargaining Power in the Strait of Hormuz",
-        "link": "https://maritime-executive.com/article/iran-is-overestimating-its-bargaining-power-in-the-strait-of-hormuz",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "blockade",
-          "strait"
-        ],
-        "when": "2026-09-27 19:23",
-        "supply": true
-      },
-      {
-        "title": "New Zealand Conducts UN Patrol Targeting North Korean Sanctions Avoidance",
-        "link": "https://maritime-executive.com/article/new-zealand-conducts-un-patrol-targeting-north-korean-sanctions-avoidance",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "deployment"
-        ],
-        "when": "2026-09-27 15:00",
         "supply": false
       }
     ]
