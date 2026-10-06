@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-10-05T11:58:54Z",
+  "generated_utc": "2026-10-06T11:39:43Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.6025,
-      "rsi": 51.96,
-      "macd": 0.00422,
-      "macd_signal": 0.01587,
-      "macd_hist": -0.01165,
-      "tech_score": -0.309,
-      "macd_component": -0.656,
-      "rsi_component": 0.039,
-      "verdict": "SELL",
-      "verdict_ar": "بيع",
-      "state": "SELL",
-      "state_ar": "بيع",
-      "strength": 31,
-      "rationale": "MACD < signal; RSI 51.96; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 51.96؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "close": 6.6565,
+      "rsi": 54.84,
+      "macd": 0.00945,
+      "macd_signal": 0.01437,
+      "macd_hist": -0.00492,
+      "tech_score": -0.09,
+      "macd_component": -0.276,
+      "rsi_component": 0.097,
+      "verdict": "HOLD",
+      "verdict_ar": "انتظار",
+      "state": "NEUTRAL",
+      "state_ar": "محايد — لا أفضلية واضحة",
+      "strength": 9,
+      "rationale": "MACD < signal; RSI 54.84; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 54.84؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-13",
           "2026-07-14",
           "2026-07-15",
           "2026-07-16",
@@ -82,10 +81,10 @@
           "2026-09-30",
           "2026-10-01",
           "2026-10-02",
-          "2026-10-05"
+          "2026-10-05",
+          "2026-10-06"
         ],
         "close": [
-          6.233,
           6.33,
           6.2935,
           6.296,
@@ -144,10 +143,10 @@
           6.559,
           6.482,
           6.492,
-          6.6025
+          6.5855,
+          6.6565
         ],
         "macd": [
-          -0.02768,
           -0.01439,
           -0.00671,
           -0.00043,
@@ -206,10 +205,10 @@
           0.0206,
           0.00959,
           0.00165,
-          0.00422
+          0.00287,
+          0.00945
         ],
         "signal": [
-          -0.03316,
           -0.02941,
           -0.02487,
           -0.01998,
@@ -268,10 +267,10 @@
           0.02644,
           0.02307,
           0.01879,
-          0.01587
+          0.0156,
+          0.01437
         ],
         "rsi": [
-          50.63,
           55.11,
           53.15,
           53.27,
@@ -330,34 +329,34 @@
           48.87,
           44.88,
           45.5,
-          51.96
+          51.07,
+          54.84
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 12.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.054,
-      "rsi": 55.43,
-      "macd": 0.04866,
-      "macd_signal": 0.04799,
-      "macd_hist": 0.00067,
-      "tech_score": 0.069,
-      "macd_component": 0.029,
-      "rsi_component": 0.109,
+      "close": 3.088,
+      "rsi": 57.14,
+      "macd": 0.05163,
+      "macd_signal": 0.04887,
+      "macd_hist": 0.00276,
+      "tech_score": 0.134,
+      "macd_component": 0.125,
+      "rsi_component": 0.143,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 7,
-      "rationale": "MACD > signal; RSI 55.43; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 55.43؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 13,
+      "rationale": "MACD > signal; RSI 57.14; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 57.14؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-13",
           "2026-07-14",
           "2026-07-15",
           "2026-07-16",
@@ -416,10 +415,10 @@
           "2026-09-30",
           "2026-10-01",
           "2026-10-02",
-          "2026-10-05"
+          "2026-10-05",
+          "2026-10-06"
         ],
         "close": [
-          2.897,
           2.904,
           2.924,
           2.858,
@@ -478,10 +477,10 @@
           3.026,
           2.967,
           3.035,
-          3.054
+          3.066,
+          3.088
         ],
         "macd": [
-          -0.01706,
           -0.03248,
           -0.0426,
           -0.0553,
@@ -540,10 +539,10 @@
           0.05728,
           0.04967,
           0.04857,
-          0.04866
+          0.04962,
+          0.05163
         ],
         "signal": [
-          0.02935,
           0.01698,
           0.00507,
           -0.00701,
@@ -602,10 +601,10 @@
           0.04713,
           0.04764,
           0.04783,
-          0.04799
+          0.04818,
+          0.04887
         ],
         "rsi": [
-          37.94,
           38.4,
           39.77,
           36.86,
@@ -664,37 +663,27 @@
           54.33,
           50.94,
           54.47,
-          55.43
+          56.02,
+          57.14
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 12.0
     }
   ],
   "osint": {
-    "alert_count": 9,
-    "supply_pressure": 9,
+    "alert_count": 12,
+    "supply_pressure": 12,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Iran Set to Keep Hormuz Shut Until Seven Demands Are Met",
-        "link": "https://www.marinelink.com/news/iran-set-keep-hormuz-shut-until-seven-543440",
-        "source": "MarineLink News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-10-05 07:57",
-        "supply": true
-      },
-      {
-        "title": "US Carrier George H.W. Bush Visits Thailand After Six-Month Middle East Deployment",
-        "link": "https://gcaptain.com/us-carrier-george-h-w-bush-visits-thailand-after-six-month-middle-east-deployment/",
+        "title": "US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
+        "link": "https://gcaptain.com/us-blockade-bottles-up-dozens-of-iranian-tankers-nonprofit-says/",
         "source": "gCaptain",
         "keywords": [
-          "deployment",
-          "aircraft carrier"
+          "blockade"
         ],
-        "when": "2026-10-05 05:55",
+        "when": "2026-10-06 08:19",
         "supply": true
       },
       {
@@ -704,7 +693,98 @@
         "keywords": [
           "supply chain"
         ],
-        "when": "2026-10-05 03:12",
+        "when": "2026-10-06 03:12",
+        "supply": true
+      },
+      {
+        "title": "Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
+        "link": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-05 22:28",
+        "supply": true
+      },
+      {
+        "title": "Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
+        "link": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-05 20:02",
+        "supply": true
+      },
+      {
+        "title": "UKMTO: Tanker's Engine Room On Fire After Latest Hormuz Attack",
+        "link": "https://maritime-executive.com/article/ukmto-tanker-s-engine-room-on-fire-after-latest-hormuz-attack",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-05 19:56",
+        "supply": true
+      },
+      {
+        "title": "Carrier USS George H.W. Bush Makes Port Call in Thailand",
+        "link": "https://news.usni.org/2026/10/05/carrier-uss-george-h-w-bush-makes-port-call-in-thailand",
+        "source": "USNI News",
+        "keywords": [
+          "5th fleet",
+          "aircraft carrier"
+        ],
+        "when": "2026-10-05 19:43",
+        "supply": true
+      },
+      {
+        "title": "USNI News Fleet and Marine Tracker: Oct. 5, 2026",
+        "link": "https://news.usni.org/2026/10/05/usni-news-fleet-and-marine-tracker-oct-5-2026",
+        "source": "USNI News",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-10-05 18:13",
+        "supply": true
+      },
+      {
+        "title": "Iran’s Floating Oil Stocks Run Dry",
+        "link": "https://maritime-executive.com/article/iran-s-floating-oil-stocks-run-dry",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "blockade"
+        ],
+        "when": "2026-10-05 17:24",
+        "supply": true
+      },
+      {
+        "title": "Opinion: Oil’s New Problem Isn’t Supply. It’s Logistics",
+        "link": "https://gcaptain.com/opinion-oils-new-problem-isnt-supply-its-logistics/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-05 16:13",
+        "supply": true
+      },
+      {
+        "title": "Saudi-Backed Forces Claim Control of Bab el-Mandeb Strait",
+        "link": "https://gcaptain.com/saudi-backed-forces-claim-control-of-bab-el-mandeb-strait/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-05 16:04",
+        "supply": true
+      },
+      {
+        "title": "More Tankers Hit in Hormuz as IRGC Orders Ship to Turn Back",
+        "link": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-irgc-orders-ship-to-turn-back/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-05 15:02",
         "supply": true
       },
       {
@@ -715,56 +795,6 @@
           "strait"
         ],
         "when": "2026-10-04 19:14",
-        "supply": true
-      },
-      {
-        "title": "Iraq Shifts Oil Strategy By Arranging Tanker To Move Past Hormuz",
-        "link": "https://gcaptain.com/iraq-shifts-oil-strategy-by-arranging-tanker-to-move-past-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-10-04 16:47",
-        "supply": true
-      },
-      {
-        "title": "Difficult Times for Iran's Sanctions-Evading Oil Brokers",
-        "link": "https://maritime-executive.com/article/difficult-times-for-iran-s-sanctions-evading-oil-brokers",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "blockade"
-        ],
-        "when": "2026-10-04 00:45",
-        "supply": true
-      },
-      {
-        "title": "US Adds Carrier And 10,000 Troops To Mideast",
-        "link": "https://gcaptain.com/us-adds-carrier-and-10000-troops-to-mideast/",
-        "source": "gCaptain",
-        "keywords": [
-          "aircraft carrier"
-        ],
-        "when": "2026-10-03 17:49",
-        "supply": true
-      },
-      {
-        "title": "CMA CGM Group Completes Acquisition of FedEx Supply Chain",
-        "link": "https://maritime-executive.com/article/cma-cgm-group-completes-acquisition-of-fedex-supply-chain",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "supply chain"
-        ],
-        "when": "2026-10-03 16:43",
-        "supply": true
-      },
-      {
-        "title": "Carrier USS Dwight D. Eisenhower to Return to Port After Growler Mishap",
-        "link": "https://news.usni.org/2026/10/03/carrier-uss-dwight-d-eisenhower-to-return-to-port-after-growler-mishap",
-        "source": "USNI News",
-        "keywords": [
-          "aircraft carrier"
-        ],
-        "when": "2026-10-03 12:31",
         "supply": true
       }
     ]
