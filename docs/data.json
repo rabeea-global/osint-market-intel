@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-10-12T12:38:47Z",
+  "generated_utc": "2026-10-13T12:25:06Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.765,
-      "rsi": 60.18,
-      "macd": 0.02077,
-      "macd_signal": 0.01136,
-      "macd_hist": 0.00941,
-      "tech_score": 0.368,
-      "macd_component": 0.532,
-      "rsi_component": 0.204,
+      "close": 6.73,
+      "rsi": 58.76,
+      "macd": 0.0248,
+      "macd_signal": 0.0132,
+      "macd_hist": 0.01161,
+      "tech_score": 0.417,
+      "macd_component": 0.659,
+      "rsi_component": 0.175,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 52,
-      "rationale": "MACD > signal; RSI 60.18; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 60.18؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 57,
+      "rationale": "MACD > signal; RSI 58.76; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 58.76؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-07-20",
           "2026-07-21",
           "2026-07-22",
           "2026-07-23",
@@ -82,10 +81,10 @@
           "2026-10-07",
           "2026-10-08",
           "2026-10-09",
-          "2026-10-12"
+          "2026-10-12",
+          "2026-10-13"
         ],
         "close": [
-          6.299,
           6.511,
           6.451,
           6.305,
@@ -144,10 +143,10 @@
           6.5965,
           6.519,
           6.6425,
-          6.765
+          6.6985,
+          6.73
         ],
         "macd": [
-          0.002,
           0.02326,
           0.03487,
           0.03192,
@@ -206,10 +205,10 @@
           0.00588,
           0.00072,
           0.00652,
-          0.02077
+          0.01546,
+          0.0248
         ],
         "signal": [
-          -0.015,
           -0.00735,
           0.00109,
           0.00726,
@@ -268,10 +267,10 @@
           0.01185,
           0.00962,
           0.009,
-          0.01136
+          0.0103,
+          0.0132
         ],
         "rsi": [
-          53.67,
           62.43,
           59.03,
           51.66,
@@ -330,7 +329,8 @@
           51.71,
           46.82,
           54.25,
-          60.18
+          57.17,
+          58.76
         ]
       },
       "intel_pressure": 6.0
@@ -340,24 +340,23 @@
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.117,
-      "rsi": 55.32,
-      "macd": 0.07015,
-      "macd_signal": 0.06121,
-      "macd_hist": 0.00894,
-      "tech_score": 0.3,
-      "macd_component": 0.494,
-      "rsi_component": 0.106,
-      "verdict": "BUY",
-      "verdict_ar": "شراء",
-      "state": "BUY",
-      "state_ar": "شراء",
-      "strength": 45,
-      "rationale": "MACD > signal; RSI 55.32; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 55.32؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "close": 3.13,
+      "rsi": 55.95,
+      "macd": 0.07041,
+      "macd_signal": 0.06369,
+      "macd_hist": 0.00672,
+      "tech_score": 0.256,
+      "macd_component": 0.393,
+      "rsi_component": 0.119,
+      "verdict": "HOLD",
+      "verdict_ar": "انتظار",
+      "state": "NEUTRAL",
+      "state_ar": "محايد — لا أفضلية واضحة",
+      "strength": 26,
+      "rationale": "MACD > signal; RSI 55.95; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 55.95؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-20",
           "2026-07-21",
           "2026-07-22",
           "2026-07-23",
@@ -416,10 +415,10 @@
           "2026-10-07",
           "2026-10-08",
           "2026-10-09",
-          "2026-10-12"
+          "2026-10-12",
+          "2026-10-13"
         ],
         "close": [
-          2.86,
           2.865,
           2.925,
           2.916,
@@ -478,10 +477,10 @@
           3.203,
           3.168,
           3.22,
-          3.117
+          3.167,
+          3.13
         ],
         "macd": [
-          -0.06691,
           -0.07158,
           -0.06964,
           -0.06804,
@@ -540,10 +539,10 @@
           0.06341,
           0.06749,
           0.07406,
-          0.07015
+          0.07414,
+          0.07041
         ],
         "signal": [
-          -0.02645,
           -0.03548,
           -0.04231,
           -0.04745,
@@ -602,10 +601,10 @@
           0.05213,
           0.0552,
           0.05897,
-          0.06121
+          0.06201,
+          0.06369
         ],
         "rsi": [
-          37.9,
           38.28,
           42.81,
           42.31,
@@ -664,7 +663,8 @@
           62.43,
           59.96,
           62.34,
-          55.32
+          58.52,
+          55.95
         ]
       },
       "intel_pressure": 6.0
@@ -677,13 +677,44 @@
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Iran Weighs US Response as Hormuz Reopening Talks Stall",
-        "link": "https://www.marinelink.com/news/iran-weighs-us-response-hormuz-reopening-543600",
-        "source": "MarineLink News",
+        "title": "Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
+        "link": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
+        "source": "gCaptain",
         "keywords": [
           "strait"
         ],
-        "when": "2026-10-12 09:29",
+        "when": "2026-10-12 19:27",
+        "supply": true
+      },
+      {
+        "title": "UKMTO Reports Six Strikes in One Day on Tankers in the Mideast",
+        "link": "https://maritime-executive.com/article/ukmto-reports-third-strike-in-a-day-on-a-tanker-in-the-mideast",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-12 18:41",
+        "supply": true
+      },
+      {
+        "title": "U.K. Royal Navy Destroyer Returns Home From Middle East, Strait of Hormuz Multinational Mission in Limbo",
+        "link": "https://news.usni.org/2026/10/12/u-k-royal-navy-destroyer-returns-home-from-middle-east-strait-of-hormuz-multinational-mission-in-limbo",
+        "source": "USNI News",
+        "keywords": [
+          "deployment",
+          "strait"
+        ],
+        "when": "2026-10-12 17:56",
+        "supply": true
+      },
+      {
+        "title": "Sanctioned Russian-Flagged Lady Mariia is Loitering off Port Said",
+        "link": "https://maritime-executive.com/article/sanctioned-russian-flagged-lady-mariia-is-loitering-off-port-said",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-12 14:43",
         "supply": true
       },
       {
@@ -698,16 +729,6 @@
         "supply": true
       },
       {
-        "title": "Iran Says US Response To Its Proposal To Reopen Hormuz Was ‘Insufficient’",
-        "link": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-10-11 23:13",
-        "supply": true
-      },
-      {
         "title": "U.S. Hits Chinese-Owned Freighter, Claiming it Ran Blockade on Iran",
         "link": "https://maritime-executive.com/article/u-s-claims-to-have-hit-chinese-owned-freighter-that-ran-blockade-on-iran",
         "source": "The Maritime Executive",
@@ -715,26 +736,6 @@
           "blockade"
         ],
         "when": "2026-10-11 19:28",
-        "supply": true
-      },
-      {
-        "title": "More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
-        "link": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-10-11 14:28",
-        "supply": true
-      },
-      {
-        "title": "US Says It Disabled Cargo Vessel Trying To Run Iran Blockade",
-        "link": "https://gcaptain.com/us-says-it-disabled-cargo-vessel-trying-to-run-iran-blockade/",
-        "source": "gCaptain",
-        "keywords": [
-          "blockade"
-        ],
-        "when": "2026-10-11 03:02",
         "supply": true
       }
     ]
