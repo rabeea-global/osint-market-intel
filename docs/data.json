@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-10-19T10:26:38Z",
+  "generated_utc": "2026-10-20T09:45:20Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.591,
-      "rsi": 50.6,
-      "macd": 0.00409,
-      "macd_signal": 0.00974,
-      "macd_hist": -0.00565,
-      "tech_score": -0.168,
-      "macd_component": -0.348,
-      "rsi_component": 0.012,
+      "close": 6.5815,
+      "rsi": 50.24,
+      "macd": 0.00012,
+      "macd_signal": 0.00714,
+      "macd_hist": -0.00702,
+      "tech_score": -0.215,
+      "macd_component": -0.434,
+      "rsi_component": 0.005,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 17,
-      "rationale": "MACD < signal; RSI 50.6; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 50.6؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 22,
+      "rationale": "MACD < signal; RSI 50.24; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 50.24؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-07-27",
           "2026-07-28",
           "2026-07-29",
           "2026-07-30",
@@ -82,10 +81,10 @@
           "2026-10-14",
           "2026-10-15",
           "2026-10-16",
-          "2026-10-19"
+          "2026-10-19",
+          "2026-10-20"
         ],
         "close": [
-          6.339,
           6.322,
           6.2735,
           6.4445,
@@ -144,10 +143,10 @@
           6.6115,
           6.5115,
           6.531,
-          6.591
+          6.538,
+          6.5815
         ],
         "macd": [
-          0.03028,
           0.0286,
           0.02308,
           0.03214,
@@ -206,10 +205,10 @@
           0.01918,
           0.00983,
           0.00395,
-          0.00409
+          -0.00014,
+          0.00012
         ],
         "signal": [
-          0.01535,
           0.018,
           0.01902,
           0.02164,
@@ -268,10 +267,10 @@
           0.01373,
           0.01295,
           0.01115,
-          0.00974
+          0.00889,
+          0.00714
         ],
         "rsi": [
-          52.72,
           51.8,
           49.18,
           57.37,
@@ -330,34 +329,34 @@
           51.35,
           45.53,
           46.8,
-          50.6
+          47.27,
+          50.24
         ]
       },
-      "intel_pressure": 4.0
+      "intel_pressure": 5.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.142,
-      "rsi": 53.65,
-      "macd": 0.06701,
-      "macd_signal": 0.07114,
-      "macd_hist": -0.00414,
-      "tech_score": -0.103,
-      "macd_component": -0.278,
-      "rsi_component": 0.073,
-      "verdict": "HOLD",
-      "verdict_ar": "انتظار",
-      "state": "NEUTRAL",
-      "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 10,
-      "rationale": "MACD < signal; RSI 53.65; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 53.65؛ OSINT: ضغط صعودي (مراقبة)",
+      "close": 2.998,
+      "rsi": 46.01,
+      "macd": 0.0447,
+      "macd_signal": 0.06478,
+      "macd_hist": -0.02008,
+      "tech_score": -0.54,
+      "macd_component": -1.0,
+      "rsi_component": -0.08,
+      "verdict": "SELL",
+      "verdict_ar": "بيع",
+      "state": "SELL",
+      "state_ar": "بيع",
+      "strength": 54,
+      "rationale": "MACD < signal; RSI 46.01; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 46.01؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-07-27",
           "2026-07-28",
           "2026-07-29",
           "2026-07-30",
@@ -416,10 +415,10 @@
           "2026-10-14",
           "2026-10-15",
           "2026-10-16",
-          "2026-10-19"
+          "2026-10-19",
+          "2026-10-20"
         ],
         "close": [
-          2.767,
           2.662,
           2.725,
           2.758,
@@ -478,10 +477,10 @@
           3.198,
           3.236,
           3.116,
-          3.142
+          3.058,
+          2.998
         ],
         "macd": [
-          -0.07864,
           -0.09294,
           -0.09806,
           -0.09831,
@@ -540,10 +539,10 @@
           0.08152,
           0.08277,
           0.07324,
-          0.06701
+          0.06031,
+          0.0447
         ],
         "signal": [
-          -0.05764,
           -0.0647,
           -0.07137,
           -0.07676,
@@ -602,10 +601,10 @@
           0.0692,
           0.07191,
           0.07218,
-          0.07114
+          0.0698,
+          0.06478
         ],
         "rsi": [
-          34.78,
           30.5,
           35.62,
           38.19,
@@ -664,26 +663,57 @@
           57.98,
           59.74,
           52.31,
-          53.65
+          49.13,
+          46.01
         ]
       },
-      "intel_pressure": 4.0
+      "intel_pressure": 5.0
     }
   ],
   "osint": {
-    "alert_count": 5,
-    "supply_pressure": 4,
+    "alert_count": 7,
+    "supply_pressure": 5,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Two Oil Tankers Hit Mines While Crossing Strait of Hormuz",
-        "link": "https://www.marinelink.com/news/two-oil-tankers-hit-mines-crossing-strait-543755",
-        "source": "MarineLink News",
+        "title": "Tug Attacked Near Strait of Hormuz",
+        "link": "https://maritime-executive.com/article/tug-attacked-near-strait-of-hormuz",
+        "source": "The Maritime Executive",
         "keywords": [
           "strait"
         ],
-        "when": "2026-10-19 09:00",
+        "when": "2026-10-19 20:17",
+        "supply": true
+      },
+      {
+        "title": "From Ports to Power Plants: Decision Intel Transforms Critical Infrastructure",
+        "link": "https://www.marinelink.com/news/ports-power-plants-decision-intel-543776",
+        "source": "MarineLink News",
+        "keywords": [
+          "satellite imagery"
+        ],
+        "when": "2026-10-19 19:28",
+        "supply": false
+      },
+      {
+        "title": "Iran’s Main Oil Terminals Remain Empty as US Blockade Bites",
+        "link": "https://gcaptain.com/irans-main-oil-terminals-remain-empty-as-us-blockade-bites/",
+        "source": "gCaptain",
+        "keywords": [
+          "blockade"
+        ],
+        "when": "2026-10-19 16:26",
+        "supply": true
+      },
+      {
+        "title": "USNI News Fleet and Marine Tracker: Oct. 19, 2026",
+        "link": "https://news.usni.org/2026/10/19/usni-news-fleet-and-marine-tracker-oct-19-2026",
+        "source": "USNI News",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-10-19 16:18",
         "supply": true
       },
       {
@@ -714,16 +744,6 @@
           "strait"
         ],
         "when": "2026-10-18 16:07",
-        "supply": true
-      },
-      {
-        "title": "Iran’s Guards Say Two Tankers Hit Mines In Strait Of Hormuz",
-        "link": "https://gcaptain.com/irans-guards-say-two-tankers-hit-mines-in-strait-of-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-10-17 14:44",
         "supply": true
       }
     ]
