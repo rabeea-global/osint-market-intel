@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-10-26T10:41:38Z",
+  "generated_utc": "2026-10-27T10:09:28Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.5265,
-      "rsi": 48.49,
-      "macd": -0.0221,
-      "macd_signal": -0.00831,
-      "macd_hist": -0.01379,
-      "tech_score": -0.437,
-      "macd_component": -0.845,
-      "rsi_component": -0.03,
-      "verdict": "SELL",
-      "verdict_ar": "بيع",
-      "state": "SELL",
-      "state_ar": "بيع",
-      "strength": 44,
-      "rationale": "MACD < signal; RSI 48.49; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 48.49؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "close": 6.619,
+      "rsi": 53.72,
+      "macd": -0.01443,
+      "macd_signal": -0.00977,
+      "macd_hist": -0.00465,
+      "tech_score": -0.107,
+      "macd_component": -0.289,
+      "rsi_component": 0.074,
+      "verdict": "HOLD",
+      "verdict_ar": "انتظار",
+      "state": "NEUTRAL",
+      "state_ar": "محايد — لا أفضلية واضحة",
+      "strength": 11,
+      "rationale": "MACD < signal; RSI 53.72; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 53.72؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-08-03",
           "2026-08-04",
           "2026-08-05",
           "2026-08-06",
@@ -82,10 +81,10 @@
           "2026-10-21",
           "2026-10-22",
           "2026-10-23",
-          "2026-10-26"
+          "2026-10-26",
+          "2026-10-27"
         ],
         "close": [
-          6.514,
           6.6185,
           6.703,
           6.687,
@@ -144,10 +143,10 @@
           6.543,
           6.3625,
           6.476,
-          6.5265
+          6.508,
+          6.619
         ],
         "macd": [
-          0.04885,
           0.06487,
           0.08342,
           0.09573,
@@ -206,10 +205,10 @@
           -0.00367,
           -0.02005,
           -0.02361,
-          -0.0221
+          -0.02358,
+          -0.01443
         ],
         "signal": [
-          0.02989,
           0.03688,
           0.04619,
           0.0561,
@@ -268,10 +267,10 @@
           0.00479,
           -0.00018,
           -0.00487,
-          -0.00831
+          -0.00861,
+          -0.00977
         ],
         "rsi": [
-          59.8,
           63.84,
           66.75,
           65.68,
@@ -330,34 +329,34 @@
           47.65,
           37.6,
           45.4,
-          48.49
+          47.4,
+          53.72
         ]
       },
-      "intel_pressure": 3.0
+      "intel_pressure": 7.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.005,
-      "rsi": 50.17,
-      "macd": -0.03234,
-      "macd_signal": 0.01388,
-      "macd_hist": -0.04621,
-      "tech_score": -0.498,
+      "close": 3.036,
+      "rsi": 52.27,
+      "macd": -0.04939,
+      "macd_signal": -0.00392,
+      "macd_hist": -0.04547,
+      "tech_score": -0.477,
       "macd_component": -1.0,
-      "rsi_component": 0.003,
+      "rsi_component": 0.045,
       "verdict": "SELL",
       "verdict_ar": "بيع",
       "state": "SELL",
       "state_ar": "بيع",
-      "strength": 50,
-      "rationale": "MACD < signal; RSI 50.17; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 50.17؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "strength": 48,
+      "rationale": "MACD < signal; RSI 52.27; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 52.27؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-08-03",
           "2026-08-04",
           "2026-08-05",
           "2026-08-06",
@@ -416,10 +415,10 @@
           "2026-10-21",
           "2026-10-22",
           "2026-10-23",
-          "2026-10-26"
+          "2026-10-26",
+          "2026-10-27"
         ],
         "close": [
-          2.781,
           2.682,
           2.688,
           2.64,
@@ -478,10 +477,10 @@
           2.79,
           2.796,
           2.64,
-          3.005
+          2.602,
+          3.036
         ],
         "macd": [
-          -0.09375,
           -0.09759,
           -0.09901,
           -0.10283,
@@ -540,10 +539,10 @@
           0.01322,
           -0.00893,
           -0.03863,
-          -0.03234
+          -0.06449,
+          -0.04939
         ],
         "signal": [
-          -0.08276,
           -0.08573,
           -0.08839,
           -0.09127,
@@ -602,10 +601,10 @@
           0.05404,
           0.04144,
           0.02543,
-          0.01388
+          0.00745,
+          -0.00392
         ],
         "rsi": [
-          40.51,
           35.5,
           36.02,
           33.7,
@@ -664,18 +663,70 @@
           37.29,
           37.66,
           32.3,
-          50.17
+          31.14,
+          52.27
         ]
       },
-      "intel_pressure": 3.0
+      "intel_pressure": 7.0
     }
   ],
   "osint": {
-    "alert_count": 3,
-    "supply_pressure": 3,
+    "alert_count": 8,
+    "supply_pressure": 7,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "As Attacks Mount, Shipping Faces an Uncomfortable Question: Are Safety Rules Fit for War?",
+        "link": "https://gcaptain.com/as-attacks-mount-shipping-faces-an-uncomfortable-question-are-safety-rules-fit-for-war/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-26 23:43",
+        "supply": true
+      },
+      {
+        "title": "Indonesia Busts Mongolian-Flagged Tanker for Ketamine Smuggling",
+        "link": "https://maritime-executive.com/article/indonesia-busts-mongolian-flagged-tanker-for-ketamine-smuggling",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-26 21:23",
+        "supply": true
+      },
+      {
+        "title": "U.S. Navy Taps Attack Boat for 2027 Australian AUKUS Assignment",
+        "link": "https://news.usni.org/2026/10/26/u-s-navy-taps-attack-boat-for-2027-australian-aukus-assignment",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-10-26 20:46",
+        "supply": false
+      },
+      {
+        "title": "Tanker Disabled in Strait of Hormuz Attack, Another Vessel Reported on Fire in Persian Gulf",
+        "link": "https://gcaptain.com/tanker-disabled-in-strait-of-hormuz-attack-another-vessel-reported-on-fire-in-persian-gulf/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-10-26 18:46",
+        "supply": true
+      },
+      {
+        "title": "New Philippine Coast Guard Vessel Shadows Chinese Carrier Strike Group off Mindanao",
+        "link": "https://news.usni.org/2026/10/26/new-philippine-coast-guard-vessel-shadows-chinese-carrier-strike-group-off-mindanao",
+        "source": "USNI News",
+        "keywords": [
+          "aircraft carrier",
+          "strait"
+        ],
+        "when": "2026-10-26 14:45",
+        "supply": true
+      },
       {
         "title": "CENTCOM's Commander Conducts an Inspection Flight in Strait of Hormuz",
         "link": "https://maritime-executive.com/article/centcom-s-commander-conducts-an-inspection-flight-in-strait-of-hormuz",
