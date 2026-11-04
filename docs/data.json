@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-03T12:33:34Z",
+  "generated_utc": "2026-11-04T12:43:30Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.376,
-      "rsi": 41.55,
-      "macd": -0.02265,
-      "macd_signal": -0.01137,
-      "macd_hist": -0.01128,
-      "tech_score": -0.548,
-      "macd_component": -0.927,
-      "rsi_component": -0.169,
+      "close": 6.4465,
+      "rsi": 45.44,
+      "macd": -0.02656,
+      "macd_signal": -0.01438,
+      "macd_hist": -0.01219,
+      "tech_score": -0.546,
+      "macd_component": -1.0,
+      "rsi_component": -0.091,
       "verdict": "SELL",
       "verdict_ar": "بيع",
       "state": "SELL",
       "state_ar": "بيع",
       "strength": 55,
-      "rationale": "MACD < signal; RSI 41.55; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 41.55؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "rationale": "MACD < signal; RSI 45.44; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 45.44؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-08-11",
           "2026-08-12",
           "2026-08-13",
           "2026-08-14",
@@ -82,10 +81,10 @@
           "2026-10-29",
           "2026-10-30",
           "2026-11-02",
-          "2026-11-03"
+          "2026-11-03",
+          "2026-11-04"
         ],
         "close": [
-          6.612,
           6.597,
           6.5925,
           6.5995,
@@ -144,10 +143,10 @@
           6.581,
           6.4585,
           6.5435,
-          6.376
+          6.3785,
+          6.4465
         ],
         "macd": [
-          0.09671,
           0.09475,
           0.09178,
           0.08896,
@@ -206,10 +205,10 @@
           -0.00276,
           -0.01067,
           -0.00996,
-          -0.02265
+          -0.02245,
+          -0.02656
         ],
         "signal": [
-          0.07668,
           0.0803,
           0.08259,
           0.08387,
@@ -268,10 +267,10 @@
           -0.00758,
           -0.0082,
           -0.00855,
-          -0.01137
+          -0.01133,
+          -0.01438
         ],
         "rsi": [
-          61.14,
           60.11,
           59.78,
           60.15,
@@ -330,34 +329,34 @@
           51.12,
           44.45,
           49.39,
-          41.55
+          41.64,
+          45.44
         ]
       },
-      "intel_pressure": 10.0
+      "intel_pressure": 6.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 2.893,
-      "rsi": 48.06,
-      "macd": -0.04931,
-      "macd_signal": -0.04153,
-      "macd_hist": -0.00778,
-      "tech_score": -0.176,
-      "macd_component": -0.313,
-      "rsi_component": -0.039,
+      "close": 2.903,
+      "rsi": 48.58,
+      "macd": -0.04371,
+      "macd_signal": -0.04194,
+      "macd_hist": -0.00177,
+      "tech_score": -0.05,
+      "macd_component": -0.071,
+      "rsi_component": -0.028,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "NEUTRAL",
       "state_ar": "محايد — لا أفضلية واضحة",
-      "strength": 18,
-      "rationale": "MACD < signal; RSI 48.06; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 48.06؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 5,
+      "rationale": "MACD < signal; RSI 48.58; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 48.58؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-08-11",
           "2026-08-12",
           "2026-08-13",
           "2026-08-14",
@@ -416,10 +415,10 @@
           "2026-10-29",
           "2026-10-30",
           "2026-11-02",
-          "2026-11-03"
+          "2026-11-03",
+          "2026-11-04"
         ],
         "close": [
-          2.767,
           2.804,
           2.727,
           2.733,
@@ -478,10 +477,10 @@
           2.952,
           2.898,
           2.856,
-          2.893
+          2.895,
+          2.903
         ],
         "macd": [
-          -0.08459,
           -0.07431,
           -0.07155,
           -0.06809,
@@ -540,10 +539,10 @@
           -0.06289,
           -0.0567,
           -0.05456,
-          -0.04931
+          -0.04915,
+          -0.04371
         ],
         "signal": [
-          -0.09316,
           -0.08939,
           -0.08582,
           -0.08227,
@@ -602,10 +601,10 @@
           -0.03063,
           -0.03584,
           -0.03959,
-          -0.04153
+          -0.0415,
+          -0.04194
         ],
         "rsi": [
-          44.19,
           46.94,
           42.28,
           42.75,
@@ -664,37 +663,47 @@
           50.4,
           48.02,
           46.19,
-          48.06
+          48.16,
+          48.58
         ]
       },
-      "intel_pressure": 10.0
+      "intel_pressure": 6.0
     }
   ],
   "osint": {
-    "alert_count": 10,
-    "supply_pressure": 10,
+    "alert_count": 7,
+    "supply_pressure": 6,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "Wärtsilä Helps Chevron Cut Methane Emissions with LNG Carriers Upgrade",
-        "link": "https://www.marinelink.com/news/wrtsil-helps-chevron-cut-methane-544100",
-        "source": "MarineLink News",
+        "title": "Iran Increases Pressure on Shipping Doubling “Non-Compliant” List",
+        "link": "https://maritime-executive.com/article/iran-increases-pressure-on-shipping-doubling-non-compliant-list",
+        "source": "The Maritime Executive",
         "keywords": [
-          "lng carrier"
+          "strait"
         ],
-        "when": "2026-11-03 11:25",
+        "when": "2026-11-03 18:33",
         "supply": true
       },
       {
-        "title": "Aramco Targets Hormuz Bypass with East-West Pipeline Expansion",
-        "link": "https://www.marinelink.com/news/aramco-targets-hormuz-bypass-eastwest-544099",
-        "source": "MarineLink News",
+        "title": "Longer Navy Deployments Demand More Than Tough Sailors",
+        "link": "https://gcaptain.com/longer-navy-deployments-demand-more-than-tough-sailors/",
+        "source": "gCaptain",
         "keywords": [
-          "blockade",
-          "strait"
+          "deployment"
         ],
-        "when": "2026-11-03 11:00",
+        "when": "2026-11-03 17:56",
+        "supply": false
+      },
+      {
+        "title": "Former USS Enterprise Begins Final Voyage to Alabama for Dismantling",
+        "link": "https://gcaptain.com/former-uss-enterprise-begins-final-voyage-to-alabama-for-dismantling/",
+        "source": "gCaptain",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-11-03 15:15",
         "supply": true
       },
       {
@@ -728,16 +737,6 @@
         "supply": true
       },
       {
-        "title": "Pakistan LNG Cargo Attacked Near Hormuz Had Iranian Approval",
-        "link": "https://gcaptain.com/pakistan-lng-cargo-attacked-near-hormuz-had-iranian-approval-2/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-02 18:02",
-        "supply": true
-      },
-      {
         "title": "Enterprise Hulk Towed from Newport News Shipbuilding",
         "link": "https://news.usni.org/2026/11/02/enterprise-hulk-towed-from-newport-news-shipbuilding",
         "source": "USNI News",
@@ -746,37 +745,6 @@
           "aircraft carrier"
         ],
         "when": "2026-11-02 16:32",
-        "supply": true
-      },
-      {
-        "title": "New Wave of Attacks Hits Tankers and LNG Carrier in Strait of Hormuz and Persian Gulf",
-        "link": "https://gcaptain.com/new-wave-of-attacks-hits-tankers-and-lng-carrier-in-strait-of-hormuz-and-persian-gulf/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait",
-          "lng carrier"
-        ],
-        "when": "2026-11-02 16:00",
-        "supply": true
-      },
-      {
-        "title": "Op-Ed: Hormuz Crisis Has Parallels to the Suez Crisis of 1956",
-        "link": "https://maritime-executive.com/article/op-ed-in-the-hormuz-crisis-parallels-to-the-suez-crisis-of-1956",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-01 23:41",
-        "supply": true
-      },
-      {
-        "title": "Offshore Tug Hit in Latest Attack in Strait of Hormuz",
-        "link": "https://maritime-executive.com/article/offshore-tug-hit-in-latest-attack-in-strait-of-hormuz",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-01 22:48",
         "supply": true
       }
     ]
