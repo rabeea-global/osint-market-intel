@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-09T13:31:50Z",
+  "generated_utc": "2026-11-10T13:11:24Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.317,
-      "rsi": 41.82,
-      "macd": -0.06774,
-      "macd_signal": -0.03765,
-      "macd_hist": -0.03009,
-      "tech_score": -0.582,
+      "close": 6.2975,
+      "rsi": 41.16,
+      "macd": -0.07084,
+      "macd_signal": -0.04414,
+      "macd_hist": -0.0267,
+      "tech_score": -0.588,
       "macd_component": -1.0,
-      "rsi_component": -0.164,
+      "rsi_component": -0.177,
       "verdict": "SELL",
       "verdict_ar": "بيع",
       "state": "SELL",
       "state_ar": "بيع",
-      "strength": 58,
-      "rationale": "MACD < signal; RSI 41.82; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 41.82؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "strength": 59,
+      "rationale": "MACD < signal; RSI 41.16; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 41.16؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-08-17",
           "2026-08-18",
           "2026-08-19",
           "2026-08-20",
@@ -82,10 +81,10 @@
           "2026-11-04",
           "2026-11-05",
           "2026-11-06",
-          "2026-11-09"
+          "2026-11-09",
+          "2026-11-10"
         ],
         "close": [
-          6.604,
           6.4825,
           6.4875,
           6.46,
@@ -144,10 +143,10 @@
           6.403,
           6.249,
           6.218,
-          6.317
+          6.3285,
+          6.2975
         ],
         "macd": [
-          0.08327,
           0.07056,
           0.0602,
           0.0492,
@@ -206,10 +205,10 @@
           -0.03007,
           -0.04795,
           -0.06388,
-          -0.06774
+          -0.06682,
+          -0.07084
         ],
         "signal": [
-          0.08016,
           0.07824,
           0.07463,
           0.06955,
@@ -268,10 +267,10 @@
           -0.01513,
           -0.02169,
           -0.03013,
-          -0.03765
+          -0.03747,
+          -0.04414
         ],
         "rsi": [
-          60.02,
           50.77,
           51.1,
           49.13,
@@ -330,7 +329,8 @@
           43.07,
           36.95,
           35.84,
-          41.82
+          42.44,
+          41.16
         ]
       },
       "intel_pressure": 5.0
@@ -340,24 +340,23 @@
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.098,
-      "rsi": 57.96,
-      "macd": -0.00574,
-      "macd_signal": -0.02977,
-      "macd_hist": 0.02403,
-      "tech_score": 0.562,
-      "macd_component": 0.965,
-      "rsi_component": 0.159,
+      "close": 3.256,
+      "rsi": 63.78,
+      "macd": 0.02698,
+      "macd_signal": -0.01689,
+      "macd_hist": 0.04386,
+      "tech_score": 0.638,
+      "macd_component": 1.0,
+      "rsi_component": 0.276,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 71,
-      "rationale": "MACD > signal; RSI 57.96; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 57.96؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 79,
+      "rationale": "MACD > signal; RSI 63.78; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 63.78؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-08-17",
           "2026-08-18",
           "2026-08-19",
           "2026-08-20",
@@ -416,10 +415,10 @@
           "2026-11-04",
           "2026-11-05",
           "2026-11-06",
-          "2026-11-09"
+          "2026-11-09",
+          "2026-11-10"
         ],
         "close": [
-          2.69,
           2.776,
           2.814,
           2.733,
@@ -478,10 +477,10 @@
           2.959,
           2.947,
           2.998,
-          3.098
+          3.218,
+          3.256
         ],
         "macd": [
-          -0.06841,
           -0.06071,
           -0.05095,
           -0.04918,
@@ -540,10 +539,10 @@
           -0.03925,
           -0.032,
           -0.02189,
-          -0.00574
+          0.00384,
+          0.02698
         ],
         "signal": [
-          -0.07998,
           -0.07613,
           -0.07109,
           -0.06671,
@@ -602,10 +601,10 @@
           -0.04106,
           -0.03925,
           -0.03577,
-          -0.02977
+          -0.02785,
+          -0.01689
         ],
         "rsi": [
-          40.06,
           46.92,
           49.67,
           44.4,
@@ -664,7 +663,8 @@
           51.31,
           50.69,
           53.29,
-          57.96
+          62.46,
+          63.78
         ]
       },
       "intel_pressure": 5.0
@@ -676,6 +676,36 @@
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "G7 Launches Global Port Security Network to Combat Drug Trafficking",
+        "link": "https://gcaptain.com/g7-launches-global-port-security-network-to-combat-drug-trafficking/",
+        "source": "gCaptain",
+        "keywords": [
+          "supply chain"
+        ],
+        "when": "2026-11-09 19:43",
+        "supply": true
+      },
+      {
+        "title": "S-100 Requires Real-Time Underwater Perception Where Data is Lacking",
+        "link": "https://maritime-executive.com/article/s-100-requires-real-time-underwater-perception-where-data-is-lacking",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-09 17:13",
+        "supply": false
+      },
+      {
+        "title": "USS Theodore Roosevelt CSG Leaves Singapore Bound for the Gulf",
+        "link": "https://maritime-executive.com/article/uss-theodore-roosevelt-csg-leaves-singapore-bound-for-the-gulf",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-11-09 15:53",
+        "supply": true
+      },
       {
         "title": "Iraq Has Reached Understandings With US To Allow Oil Exports Through Hormuz",
         "link": "https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/",
@@ -705,36 +735,6 @@
         ],
         "when": "2026-11-08 19:30",
         "supply": true
-      },
-      {
-        "title": "US Forces Disable First Cargo Ship in a Month Sailing from Iranian Port",
-        "link": "https://maritime-executive.com/article/us-forces-disable-first-cargo-ship-in-a-month-sailing-from-iranian-port",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "blockade"
-        ],
-        "when": "2026-11-07 23:15",
-        "supply": true
-      },
-      {
-        "title": "US Military Says It Disabled Cargo Vessel In Gulf Of Oman",
-        "link": "https://gcaptain.com/us-military-says-it-disabled-cargo-vessel-in-gulf-of-oman/",
-        "source": "gCaptain",
-        "keywords": [
-          "blockade"
-        ],
-        "when": "2026-11-07 22:04",
-        "supply": true
-      },
-      {
-        "title": "European troops set to train in Poland for postwar Ukraine deployment",
-        "link": "https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/",
-        "source": "Defense News",
-        "keywords": [
-          "deployment"
-        ],
-        "when": "2026-11-07 15:05",
-        "supply": false
       }
     ]
   }
