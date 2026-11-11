@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-10T13:11:24Z",
+  "generated_utc": "2026-11-11T12:20:14Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.2975,
-      "rsi": 41.16,
-      "macd": -0.07084,
-      "macd_signal": -0.04414,
-      "macd_hist": -0.0267,
-      "tech_score": -0.588,
+      "close": 6.297,
+      "rsi": 42.59,
+      "macd": -0.07802,
+      "macd_signal": -0.05191,
+      "macd_hist": -0.02611,
+      "tech_score": -0.574,
       "macd_component": -1.0,
-      "rsi_component": -0.177,
+      "rsi_component": -0.148,
       "verdict": "SELL",
       "verdict_ar": "بيع",
       "state": "SELL",
       "state_ar": "بيع",
-      "strength": 59,
-      "rationale": "MACD < signal; RSI 41.16; ⚠ OSINT intel ▲ conflicts with SELL",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 41.16؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
+      "strength": 57,
+      "rationale": "MACD < signal; RSI 42.59; ⚠ OSINT intel ▲ conflicts with SELL",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 42.59؛ ⚠ OSINT: ضغط صعودي يتعارض مع بيع",
       "series": {
         "dates": [
-          "2026-08-18",
           "2026-08-19",
           "2026-08-20",
           "2026-08-21",
@@ -82,10 +81,10 @@
           "2026-11-05",
           "2026-11-06",
           "2026-11-09",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-11"
         ],
         "close": [
-          6.4825,
           6.4875,
           6.46,
           6.5795,
@@ -144,10 +143,10 @@
           6.249,
           6.218,
           6.3285,
-          6.2975
+          6.2195,
+          6.297
         ],
         "macd": [
-          0.07056,
           0.0602,
           0.0492,
           0.04956,
@@ -206,10 +205,10 @@
           -0.04795,
           -0.06388,
           -0.06682,
-          -0.07084
+          -0.07706,
+          -0.07802
         ],
         "signal": [
-          0.07824,
           0.07463,
           0.06955,
           0.06555,
@@ -268,10 +267,10 @@
           -0.02169,
           -0.03013,
           -0.03747,
-          -0.04414
+          -0.04539,
+          -0.05191
         ],
         "rsi": [
-          50.77,
           51.1,
           49.13,
           56.92,
@@ -330,34 +329,34 @@
           36.95,
           35.84,
           42.44,
-          41.16
+          38.26,
+          42.59
         ]
       },
-      "intel_pressure": 5.0
+      "intel_pressure": 3.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.256,
-      "rsi": 63.78,
-      "macd": 0.02698,
-      "macd_signal": -0.01689,
-      "macd_hist": 0.04386,
-      "tech_score": 0.638,
+      "close": 3.335,
+      "rsi": 66.34,
+      "macd": 0.05357,
+      "macd_signal": -0.00229,
+      "macd_hist": 0.05585,
+      "tech_score": 0.663,
       "macd_component": 1.0,
-      "rsi_component": 0.276,
-      "verdict": "BUY",
-      "verdict_ar": "شراء",
-      "state": "BUY",
-      "state_ar": "شراء",
-      "strength": 79,
-      "rationale": "MACD > signal; RSI 63.78; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 63.78؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "rsi_component": 0.327,
+      "verdict": "HOLD",
+      "verdict_ar": "انتظار",
+      "state": "OVERBOUGHT",
+      "state_ar": "تشبّع شرائي — انتظار تصحيح",
+      "strength": 66,
+      "rationale": "MACD > signal; RSI 66.34; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 66.34؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-08-18",
           "2026-08-19",
           "2026-08-20",
           "2026-08-21",
@@ -416,10 +415,10 @@
           "2026-11-05",
           "2026-11-06",
           "2026-11-09",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-11"
         ],
         "close": [
-          2.776,
           2.814,
           2.733,
           2.773,
@@ -478,10 +477,10 @@
           2.947,
           2.998,
           3.218,
-          3.256
+          3.296,
+          3.335
         ],
         "macd": [
-          -0.06071,
           -0.05095,
           -0.04918,
           -0.04405,
@@ -540,10 +539,10 @@
           -0.032,
           -0.02189,
           0.00384,
-          0.02698
+          0.03017,
+          0.05357
         ],
         "signal": [
-          -0.07613,
           -0.07109,
           -0.06671,
           -0.06218,
@@ -602,10 +601,10 @@
           -0.03925,
           -0.03577,
           -0.02785,
-          -0.01689
+          -0.01625,
+          -0.00229
         ],
         "rsi": [
-          46.92,
           49.67,
           44.4,
           47.37,
@@ -664,26 +663,37 @@
           50.69,
           53.29,
           62.46,
-          63.78
+          65.08,
+          66.34
         ]
       },
-      "intel_pressure": 5.0
+      "intel_pressure": 3.0
     }
   ],
   "osint": {
-    "alert_count": 6,
-    "supply_pressure": 5,
+    "alert_count": 4,
+    "supply_pressure": 3,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
       {
-        "title": "G7 Launches Global Port Security Network to Combat Drug Trafficking",
-        "link": "https://gcaptain.com/g7-launches-global-port-security-network-to-combat-drug-trafficking/",
-        "source": "gCaptain",
+        "title": "Analysis: China's Naval Drills Suggest Preparation to Isolate Taiwan",
+        "link": "https://maritime-executive.com/article/analysis-china-s-naval-drills-suggest-preparation-to-isolate-taiwan",
+        "source": "The Maritime Executive",
         "keywords": [
-          "supply chain"
+          "naval drill"
         ],
-        "when": "2026-11-09 19:43",
+        "when": "2026-11-11 04:44",
+        "supply": true
+      },
+      {
+        "title": "Uncertainty Surrounds Possible Attack on Oman's Strait of Hormuz Lighthouse",
+        "link": "https://maritime-executive.com/article/uncertainty-surrounds-possible-attack-on-oman-s-strait-of-hormuz-lighthouse",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-10 22:40",
         "supply": true
       },
       {
@@ -704,36 +714,6 @@
           "aircraft carrier"
         ],
         "when": "2026-11-09 15:53",
-        "supply": true
-      },
-      {
-        "title": "Iraq Has Reached Understandings With US To Allow Oil Exports Through Hormuz",
-        "link": "https://gcaptain.com/iraq-has-reached-understandings-with-us-to-allow-oil-exports-through-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-08 22:30",
-        "supply": true
-      },
-      {
-        "title": "Tanker Burns After Strike in Strait of Hormuz",
-        "link": "https://maritime-executive.com/article/tanker-burns-after-strike-in-strait-of-hormuz",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-08 20:37",
-        "supply": true
-      },
-      {
-        "title": "CENTCOM Mirrors Naval Blockade With \"Iron Gate\" for Iran's Borders",
-        "link": "https://maritime-executive.com/article/centcom-mirrors-naval-blockade-with-iron-gate-for-iran-s-borders",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "blockade"
-        ],
-        "when": "2026-11-08 19:30",
         "supply": true
       }
     ]
