@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-16T13:17:18Z",
+  "generated_utc": "2026-11-17T14:01:54Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 6.039,
-      "rsi": 33.15,
-      "macd": -0.11532,
-      "macd_signal": -0.07751,
-      "macd_hist": -0.03781,
-      "tech_score": -0.669,
+      "close": 5.955,
+      "rsi": 30.67,
+      "macd": -0.13343,
+      "macd_signal": -0.08922,
+      "macd_hist": -0.04421,
+      "tech_score": -0.693,
       "macd_component": -1.0,
-      "rsi_component": -0.337,
+      "rsi_component": -0.387,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "OVERSOLD",
       "state_ar": "تشبّع بيعي — انتظار ارتداد",
-      "strength": 67,
-      "rationale": "MACD < signal; RSI 33.15; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 33.15؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 69,
+      "rationale": "MACD < signal; RSI 30.67; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 30.67؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-08-24",
           "2026-08-25",
           "2026-08-26",
           "2026-08-27",
@@ -82,10 +81,10 @@
           "2026-11-11",
           "2026-11-12",
           "2026-11-13",
-          "2026-11-16"
+          "2026-11-16",
+          "2026-11-17"
         ],
         "close": [
-          6.599,
           6.7095,
           6.5945,
           6.587,
@@ -144,10 +143,10 @@
           6.2745,
           6.1825,
           6.0795,
-          6.039
+          5.9975,
+          5.955
         ],
         "macd": [
-          0.05167,
           0.06084,
           0.05815,
           0.05479,
@@ -206,10 +205,10 @@
           -0.07981,
           -0.08839,
           -0.10233,
-          -0.11532
+          -0.11863,
+          -0.13343
         ],
         "signal": [
-          0.06384,
           0.06324,
           0.06222,
           0.06073,
@@ -268,10 +267,10 @@
           -0.05226,
           -0.05948,
           -0.06805,
-          -0.07751
+          -0.07817,
+          -0.08922
         ],
         "rsi": [
-          57.08,
           62.98,
           54.57,
           54.06,
@@ -330,34 +329,34 @@
           41.39,
           37.92,
           34.44,
-          33.15
+          31.92,
+          30.67
         ]
       },
-      "intel_pressure": 2.0
+      "intel_pressure": 8.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.168,
-      "rsi": 55.55,
-      "macd": 0.06995,
-      "macd_signal": 0.03137,
-      "macd_hist": 0.03858,
-      "tech_score": 0.555,
-      "macd_component": 1.0,
-      "rsi_component": 0.111,
+      "close": 3.063,
+      "rsi": 50.79,
+      "macd": 0.05736,
+      "macd_signal": 0.03598,
+      "macd_hist": 0.02138,
+      "tech_score": 0.394,
+      "macd_component": 0.771,
+      "rsi_component": 0.016,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 66,
-      "rationale": "MACD > signal; RSI 55.55; OSINT intel ▲ aligns (+10 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 55.55؛ OSINT: ضغط صعودي يعزّز القرار (+10)",
+      "strength": 54,
+      "rationale": "MACD > signal; RSI 50.79; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 50.79؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-08-24",
           "2026-08-25",
           "2026-08-26",
           "2026-08-27",
@@ -416,10 +415,10 @@
           "2026-11-11",
           "2026-11-12",
           "2026-11-13",
-          "2026-11-16"
+          "2026-11-16",
+          "2026-11-17"
         ],
         "close": [
-          2.782,
           2.77,
           2.842,
           2.907,
@@ -478,10 +477,10 @@
           3.215,
           3.34,
           3.23,
-          3.168
+          3.122,
+          3.063
         ],
         "macd": [
-          -0.03943,
           -0.03579,
           -0.02679,
           -0.01425,
@@ -540,10 +539,10 @@
           0.04398,
           0.06429,
           0.07069,
-          0.06995
+          0.06628,
+          0.05736
         ],
         "signal": [
-          -0.05842,
           -0.0539,
           -0.04848,
           -0.04163,
@@ -602,10 +601,10 @@
           -0.00421,
           0.00949,
           0.02173,
-          0.03137
+          0.03064,
+          0.03598
         ],
         "rsi": [
-          48.93,
           48.05,
           53.45,
           57.72,
@@ -664,18 +663,110 @@
           60.38,
           64.63,
           58.66,
-          55.55
+          53.44,
+          50.79
         ]
       },
-      "intel_pressure": 2.0
+      "intel_pressure": 8.0
     }
   ],
   "osint": {
-    "alert_count": 2,
-    "supply_pressure": 2,
+    "alert_count": 10,
+    "supply_pressure": 8,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "New pact positions the Philippines as a defense hub for Australian troops",
+        "link": "https://www.defensenews.com/global/asia-pacific/2026/11/17/new-pact-positions-the-philippines-as-a-defense-hub-for-australian-troops/",
+        "source": "Defense News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-17 11:29",
+        "supply": false
+      },
+      {
+        "title": "CruisePAL's Successful Implementation Aboard Cordelia Cruises’ Vessel",
+        "link": "https://maritime-executive.com/article/cruisepal-s-successful-implementation-aboard-cordelia-cruises-vessel",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-17 02:21",
+        "supply": false
+      },
+      {
+        "title": "Ukraine Destroys Navigation Span of Kerch Strait Bridge",
+        "link": "https://maritime-executive.com/article/ukrainian-drone-damages-navigation-span-of-kerch-strait-bridge",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-17 01:48",
+        "supply": true
+      },
+      {
+        "title": "SPL and JINGDONG Industrials Sign Strategic Partnership in Saudi Arabia",
+        "link": "https://maritime-executive.com/article/spl-and-jingdong-industrials-sign-strategic-partnership-in-saudi-arabia",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "supply chain"
+        ],
+        "when": "2026-11-17 01:16",
+        "supply": true
+      },
+      {
+        "title": "Two Tankers Hit Near Strait of Hormuz, One Disabled",
+        "link": "https://maritime-executive.com/article/two-tankers-hit-near-strait-of-hormuz-one-disabled",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-16 23:39",
+        "supply": true
+      },
+      {
+        "title": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
+        "link": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-16 22:30",
+        "supply": true
+      },
+      {
+        "title": "USS Theodore Roosevelt Now in the Middle East, Lincoln’s Last Escorts Finally Home",
+        "link": "https://news.usni.org/2026/11/16/uss-theodore-roosevelt-now-in-the-middle-east-lincolns-last-escorts-finally-home",
+        "source": "USNI News",
+        "keywords": [
+          "5th fleet",
+          "aircraft carrier"
+        ],
+        "when": "2026-11-16 21:42",
+        "supply": true
+      },
+      {
+        "title": "Oil Prices Fall Alongside Recovering Middle East Exports",
+        "link": "https://www.marinelink.com/news/oil-prices-fall-alongside-recovering-544391",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-16 19:00",
+        "supply": true
+      },
+      {
+        "title": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
+        "link": "https://gcaptain.com/the-oil-market-is-brimming-with-crude-despite-tanker-attacks/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-16 18:45",
+        "supply": true
+      },
       {
         "title": "Arabian Sea Ports are Booming as the Conflict Drags On",
         "link": "https://maritime-executive.com/article/arabian-sea-ports-are-booming-as-the-conflict-drags-on",
@@ -684,16 +775,6 @@
           "strait"
         ],
         "when": "2026-11-15 19:29",
-        "supply": true
-      },
-      {
-        "title": "Oil Tanker On Fire After Hitting Mine In Hormuz",
-        "link": "https://gcaptain.com/oil-tanker-on-fire-after-hitting-mine-in-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-14 14:41",
         "supply": true
       }
     ]
