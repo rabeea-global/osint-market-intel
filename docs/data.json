@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-17T14:01:54Z",
+  "generated_utc": "2026-11-18T13:36:38Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 5.955,
-      "rsi": 30.67,
-      "macd": -0.13343,
-      "macd_signal": -0.08922,
-      "macd_hist": -0.04421,
-      "tech_score": -0.693,
+      "close": 5.727,
+      "rsi": 24.99,
+      "macd": -0.16041,
+      "macd_signal": -0.10319,
+      "macd_hist": -0.05722,
+      "tech_score": -0.75,
       "macd_component": -1.0,
-      "rsi_component": -0.387,
+      "rsi_component": -0.5,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "OVERSOLD",
       "state_ar": "تشبّع بيعي — انتظار ارتداد",
-      "strength": 69,
-      "rationale": "MACD < signal; RSI 30.67; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 30.67؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 75,
+      "rationale": "MACD < signal; RSI 24.99; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 24.99؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-08-25",
           "2026-08-26",
           "2026-08-27",
           "2026-08-28",
@@ -82,10 +81,10 @@
           "2026-11-12",
           "2026-11-13",
           "2026-11-16",
-          "2026-11-17"
+          "2026-11-17",
+          "2026-11-18"
         ],
         "close": [
-          6.7095,
           6.5945,
           6.587,
           6.562,
@@ -144,10 +143,10 @@
           6.1825,
           6.0795,
           5.9975,
-          5.955
+          5.976,
+          5.727
         ],
         "macd": [
-          0.06084,
           0.05815,
           0.05479,
           0.04953,
@@ -206,10 +205,10 @@
           -0.08839,
           -0.10233,
           -0.11863,
-          -0.13343
+          -0.13176,
+          -0.16041
         ],
         "signal": [
-          0.06324,
           0.06222,
           0.06073,
           0.05849,
@@ -268,10 +267,10 @@
           -0.05948,
           -0.06805,
           -0.07817,
-          -0.08922
+          -0.08889,
+          -0.10319
         ],
         "rsi": [
-          62.98,
           54.57,
           54.06,
           52.32,
@@ -330,34 +329,34 @@
           37.92,
           34.44,
           31.92,
-          30.67
+          31.28,
+          24.99
         ]
       },
-      "intel_pressure": 8.0
+      "intel_pressure": 10.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.063,
-      "rsi": 50.79,
-      "macd": 0.05736,
-      "macd_signal": 0.03598,
-      "macd_hist": 0.02138,
-      "tech_score": 0.394,
-      "macd_component": 0.771,
-      "rsi_component": 0.016,
+      "close": 3.268,
+      "rsi": 58.93,
+      "macd": 0.07501,
+      "macd_signal": 0.04564,
+      "macd_hist": 0.02937,
+      "tech_score": 0.589,
+      "macd_component": 1.0,
+      "rsi_component": 0.179,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 54,
-      "rationale": "MACD > signal; RSI 50.79; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 50.79؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 74,
+      "rationale": "MACD > signal; RSI 58.93; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 58.93؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-08-25",
           "2026-08-26",
           "2026-08-27",
           "2026-08-28",
@@ -416,10 +415,10 @@
           "2026-11-12",
           "2026-11-13",
           "2026-11-16",
-          "2026-11-17"
+          "2026-11-17",
+          "2026-11-18"
         ],
         "close": [
-          2.77,
           2.842,
           2.907,
           2.888,
@@ -478,10 +477,10 @@
           3.34,
           3.23,
           3.122,
-          3.063
+          3.208,
+          3.268
         ],
         "macd": [
-          -0.03579,
           -0.02679,
           -0.01425,
           -0.00577,
@@ -540,10 +539,10 @@
           0.06429,
           0.07069,
           0.06628,
-          0.05736
+          0.06893,
+          0.07501
         ],
         "signal": [
-          -0.0539,
           -0.04848,
           -0.04163,
           -0.03446,
@@ -602,10 +601,10 @@
           0.00949,
           0.02173,
           0.03064,
-          0.03598
+          0.0383,
+          0.04564
         ],
         "rsi": [
-          48.05,
           53.45,
           57.72,
           56.1,
@@ -664,18 +663,129 @@
           64.63,
           58.66,
           53.44,
-          50.79
+          56.74,
+          58.93
         ]
       },
-      "intel_pressure": 8.0
+      "intel_pressure": 10.0
     }
   ],
   "osint": {
-    "alert_count": 10,
-    "supply_pressure": 8,
+    "alert_count": 15,
+    "supply_pressure": 10,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Smaller Tankers Join Hormuz Shuttle Trade to Keep Oil Flowing",
+        "link": "https://gcaptain.com/smaller-tankers-join-hormuz-shuttle-trade-to-keep-oil-flowing/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-18 09:11",
+        "supply": true
+      },
+      {
+        "title": "UAE’s ADNOC L&S Says One Crew Member Missing After Attack on Its Vessel in Hormuz",
+        "link": "https://gcaptain.com/uaes-adnoc-ls-says-one-crew-member-missing-after-attack-on-its-vessel-in-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-18 09:04",
+        "supply": true
+      },
+      {
+        "title": "USCG Highlights Varied Missions for Storis During 133-Day Arctic Deployment",
+        "link": "https://maritime-executive.com/article/uscg-highlights-varied-missions-for-storis-during-133-day-arctic-deployment",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-17 23:38",
+        "supply": false
+      },
+      {
+        "title": "Reverting Ford-class Carriers to Steam is ‘Non-Starter,’ Says SASC Chair Wicker",
+        "link": "https://news.usni.org/2026/11/17/reverting-ford-class-carriers-to-steam-is-non-starter-says-sasc-chair-wicker",
+        "source": "USNI News",
+        "keywords": [
+          "aircraft carrier"
+        ],
+        "when": "2026-11-17 23:17",
+        "supply": true
+      },
+      {
+        "title": "U.S. Coast Guard Icebreaker Returns From 133-Day Arctic Patrol Monitoring Chinese Research Vessels",
+        "link": "https://gcaptain.com/u-s-coast-guard-icebreaker-returns-from-133-day-arctic-patrol-monitoring-chinese-research-vessels/",
+        "source": "gCaptain",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-17 20:44",
+        "supply": false
+      },
+      {
+        "title": "U.S. Military Strikes Iranian Missile Site Near Strait of Hormuz",
+        "link": "https://gcaptain.com/u-s-military-strikes-iranian-missile-site-near-strait-of-hormuz/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-17 20:14",
+        "supply": true
+      },
+      {
+        "title": "Suspected Russian Aircraft Violated Japan’s Airspace, Says Defense Minister",
+        "link": "https://news.usni.org/2026/11/17/suspected-russian-aircraft-violated-japans-airspace-says-defense-minister",
+        "source": "USNI News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-17 18:48",
+        "supply": true
+      },
+      {
+        "title": "Hormuz Tanker Struck by Projectile Abandoned by Crew",
+        "link": "https://www.marinelink.com/news/hormuz-tanker-struck-projectile-abandoned-544423",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-17 17:52",
+        "supply": true
+      },
+      {
+        "title": "US Military Radar System in Bahrain Attacked by Iran",
+        "link": "https://www.marinelink.com/news/us-military-radar-system-bahrain-attacked-544422",
+        "source": "MarineLink News",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-17 17:51",
+        "supply": true
+      },
+      {
+        "title": "Lithuanian president says US troop rotations will continue beyond latest deployment",
+        "link": "https://www.defensenews.com/global/europe/2026/11/17/lithuanian-president-says-us-troop-rotations-will-continue-beyond-latest-deployment/",
+        "source": "Defense News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-17 17:04",
+        "supply": false
+      },
+      {
+        "title": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured",
+        "link": "https://gcaptain.com/second-strike-on-lpg-tanker-in-strait-of-hormuz-leaves-one-missing-two-injured/",
+        "source": "gCaptain",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-17 15:00",
+        "supply": true
+      },
       {
         "title": "New pact positions the Philippines as a defense hub for Australian troops",
         "link": "https://www.defensenews.com/global/asia-pacific/2026/11/17/new-pact-positions-the-philippines-as-a-defense-hub-for-australian-troops/",
@@ -714,67 +824,6 @@
           "supply chain"
         ],
         "when": "2026-11-17 01:16",
-        "supply": true
-      },
-      {
-        "title": "Two Tankers Hit Near Strait of Hormuz, One Disabled",
-        "link": "https://maritime-executive.com/article/two-tankers-hit-near-strait-of-hormuz-one-disabled",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-16 23:39",
-        "supply": true
-      },
-      {
-        "title": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
-        "link": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-16 22:30",
-        "supply": true
-      },
-      {
-        "title": "USS Theodore Roosevelt Now in the Middle East, Lincoln’s Last Escorts Finally Home",
-        "link": "https://news.usni.org/2026/11/16/uss-theodore-roosevelt-now-in-the-middle-east-lincolns-last-escorts-finally-home",
-        "source": "USNI News",
-        "keywords": [
-          "5th fleet",
-          "aircraft carrier"
-        ],
-        "when": "2026-11-16 21:42",
-        "supply": true
-      },
-      {
-        "title": "Oil Prices Fall Alongside Recovering Middle East Exports",
-        "link": "https://www.marinelink.com/news/oil-prices-fall-alongside-recovering-544391",
-        "source": "MarineLink News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-16 19:00",
-        "supply": true
-      },
-      {
-        "title": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
-        "link": "https://gcaptain.com/the-oil-market-is-brimming-with-crude-despite-tanker-attacks/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-16 18:45",
-        "supply": true
-      },
-      {
-        "title": "Arabian Sea Ports are Booming as the Conflict Drags On",
-        "link": "https://maritime-executive.com/article/arabian-sea-ports-are-booming-as-the-conflict-drags-on",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-15 19:29",
         "supply": true
       }
     ]
