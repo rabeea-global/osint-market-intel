@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-23T15:35:54Z",
+  "generated_utc": "2026-11-24T15:28:11Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 5.6905,
-      "rsi": 32.34,
-      "macd": -0.22933,
-      "macd_signal": -0.15992,
-      "macd_hist": -0.06941,
-      "tech_score": -0.677,
+      "close": 5.4645,
+      "rsi": 25.87,
+      "macd": -0.25244,
+      "macd_signal": -0.17923,
+      "macd_hist": -0.0732,
+      "tech_score": -0.741,
       "macd_component": -1.0,
-      "rsi_component": -0.353,
+      "rsi_component": -0.483,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "OVERSOLD",
       "state_ar": "تشبّع بيعي — انتظار ارتداد",
-      "strength": 68,
-      "rationale": "MACD < signal; RSI 32.34; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 32.34؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 74,
+      "rationale": "MACD < signal; RSI 25.87; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 25.87؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-08-31",
           "2026-09-01",
           "2026-09-02",
           "2026-09-03",
@@ -82,10 +81,10 @@
           "2026-11-18",
           "2026-11-19",
           "2026-11-20",
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-24"
         ],
         "close": [
-          6.5935,
           6.5065,
           6.501,
           6.577,
@@ -144,10 +143,10 @@
           5.6595,
           5.625,
           5.477,
-          5.6905
+          5.627,
+          5.4645
         ],
         "macd": [
-          0.04689,
           0.03774,
           0.02971,
           0.02914,
@@ -206,10 +205,10 @@
           -0.1658,
           -0.19333,
           -0.2245,
-          -0.22933
+          -0.23439,
+          -0.25244
         ],
         "signal": [
-          0.05557,
           0.052,
           0.04754,
           0.04386,
@@ -268,10 +267,10 @@
           -0.10428,
           -0.12209,
           -0.14257,
-          -0.15992
+          -0.16093,
+          -0.17923
         ],
         "rsi": [
-          54.42,
           48.35,
           47.98,
           53.23,
@@ -330,7 +329,8 @@
           23.69,
           23.04,
           20.43,
-          32.34
+          29.19,
+          25.87
         ]
       },
       "intel_pressure": 5.0
@@ -340,24 +340,23 @@
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.452,
-      "rsi": 63.0,
-      "macd": 0.10892,
-      "macd_signal": 0.0725,
-      "macd_hist": 0.03641,
-      "tech_score": 0.63,
+      "close": 3.653,
+      "rsi": 64.44,
+      "macd": 0.11627,
+      "macd_signal": 0.07784,
+      "macd_hist": 0.03844,
+      "tech_score": 0.644,
       "macd_component": 1.0,
-      "rsi_component": 0.26,
+      "rsi_component": 0.289,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 78,
-      "rationale": "MACD > signal; RSI 63.0; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 63.0؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 79,
+      "rationale": "MACD > signal; RSI 64.44; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 64.44؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-08-31",
           "2026-09-01",
           "2026-09-02",
           "2026-09-03",
@@ -416,10 +415,10 @@
           "2026-11-18",
           "2026-11-19",
           "2026-11-20",
-          "2026-11-23"
+          "2026-11-23",
+          "2026-11-24"
         ],
         "close": [
-          2.935,
           2.904,
           2.956,
           2.913,
@@ -478,10 +477,10 @@
           3.372,
           3.268,
           3.411,
-          3.452
+          3.184,
+          3.653
         ],
         "macd": [
-          0.00535,
           0.01096,
           0.01939,
           0.02233,
@@ -540,10 +539,10 @@
           0.08331,
           0.08533,
           0.09734,
-          0.10892
+          0.08754,
+          0.11627
         ],
         "signal": [
-          -0.02565,
           -0.01833,
           -0.01079,
           -0.00416,
@@ -602,10 +601,10 @@
           0.04731,
           0.05492,
           0.0634,
-          0.0725
+          0.06823,
+          0.07784
         ],
         "rsi": [
-          59.74,
           56.95,
           60.3,
           56.39,
@@ -664,18 +663,29 @@
           62.24,
           57.28,
           61.79,
-          63.0
+          52.33,
+          64.44
         ]
       },
       "intel_pressure": 5.0
     }
   ],
   "osint": {
-    "alert_count": 6,
+    "alert_count": 5,
     "supply_pressure": 5,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Recon Marines Join Finnish Naval Exercise, Baltic NATO Naval Drills",
+        "link": "https://news.usni.org/2026/11/23/recon-marines-join-finnish-naval-exercise-baltic-nato-naval-drills",
+        "source": "USNI News",
+        "keywords": [
+          "naval drill"
+        ],
+        "when": "2026-11-23 18:22",
+        "supply": true
+      },
       {
         "title": "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
         "link": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
@@ -716,26 +726,6 @@
         ],
         "when": "2026-11-23 03:03",
         "supply": true
-      },
-      {
-        "title": "Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
-        "link": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-21 19:38",
-        "supply": true
-      },
-      {
-        "title": "SFL Expands Orca AI Deployment Following Successful Initial Rollout",
-        "link": "https://maritime-executive.com/article/sfl-expands-orca-ai-deployment-following-successful-initial-rollout",
-        "source": "The Maritime Executive",
-        "keywords": [
-          "deployment"
-        ],
-        "when": "2026-11-21 15:55",
-        "supply": false
       }
     ]
   }
