@@ -1,29 +1,28 @@
 {
-  "generated_utc": "2026-11-25T15:14:02Z",
+  "generated_utc": "2026-11-26T14:38:31Z",
   "assets": [
     {
       "name": "Copper",
       "ticker": "HG=F",
       "ok": true,
       "error": null,
-      "close": 5.356,
-      "rsi": 24.03,
-      "macd": -0.27864,
-      "macd_signal": -0.20042,
-      "macd_hist": -0.07822,
-      "tech_score": -0.76,
+      "close": 5.4555,
+      "rsi": 30.03,
+      "macd": -0.28312,
+      "macd_signal": -0.21726,
+      "macd_hist": -0.06586,
+      "tech_score": -0.7,
       "macd_component": -1.0,
-      "rsi_component": -0.519,
+      "rsi_component": -0.399,
       "verdict": "HOLD",
       "verdict_ar": "انتظار",
       "state": "OVERSOLD",
       "state_ar": "تشبّع بيعي — انتظار ارتداد",
-      "strength": 76,
-      "rationale": "MACD < signal; RSI 24.03; OSINT intel ▲ (watch)",
-      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 24.03؛ OSINT: ضغط صعودي (مراقبة)",
+      "strength": 70,
+      "rationale": "MACD < signal; RSI 30.03; OSINT intel ▲ (watch)",
+      "rationale_ar": "MACD تحت خط الإشارة؛ RSI 30.03؛ OSINT: ضغط صعودي (مراقبة)",
       "series": {
         "dates": [
-          "2026-09-02",
           "2026-09-03",
           "2026-09-04",
           "2026-09-08",
@@ -82,10 +81,10 @@
           "2026-11-20",
           "2026-11-23",
           "2026-11-24",
-          "2026-11-25"
+          "2026-11-25",
+          "2026-11-26"
         ],
         "close": [
-          6.501,
           6.577,
           6.597,
           6.739,
@@ -144,10 +143,10 @@
           5.477,
           5.627,
           5.3625,
-          5.356
+          5.3325,
+          5.4555
         ],
         "macd": [
-          0.02971,
           0.02914,
           0.02996,
           0.04159,
@@ -206,10 +205,10 @@
           -0.2245,
           -0.23439,
           -0.26057,
-          -0.27864
+          -0.28051,
+          -0.28312
         ],
         "signal": [
-          0.04754,
           0.04386,
           0.04108,
           0.04118,
@@ -268,10 +267,10 @@
           -0.14257,
           -0.16093,
           -0.18086,
-          -0.20042
+          -0.20079,
+          -0.21726
         ],
         "rsi": [
-          47.98,
           53.23,
           54.53,
           62.49,
@@ -330,34 +329,34 @@
           20.43,
           29.19,
           24.14,
-          24.03
+          23.64,
+          30.03
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 7.0
     },
     {
       "name": "Natural Gas",
       "ticker": "NG=F",
       "ok": true,
       "error": null,
-      "close": 3.648,
-      "rsi": 64.82,
-      "macd": 0.11674,
-      "macd_signal": 0.08141,
-      "macd_hist": 0.03533,
-      "tech_score": 0.648,
+      "close": 3.622,
+      "rsi": 63.98,
+      "macd": 0.11098,
+      "macd_signal": 0.08248,
+      "macd_hist": 0.0285,
+      "tech_score": 0.64,
       "macd_component": 1.0,
-      "rsi_component": 0.296,
+      "rsi_component": 0.28,
       "verdict": "BUY",
       "verdict_ar": "شراء",
       "state": "BUY",
       "state_ar": "شراء",
-      "strength": 80,
-      "rationale": "MACD > signal; RSI 64.82; OSINT intel ▲ aligns (+15 conviction)",
-      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 64.82؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
+      "strength": 79,
+      "rationale": "MACD > signal; RSI 63.98; OSINT intel ▲ aligns (+15 conviction)",
+      "rationale_ar": "MACD فوق خط الإشارة؛ RSI 63.98؛ OSINT: ضغط صعودي يعزّز القرار (+15)",
       "series": {
         "dates": [
-          "2026-09-02",
           "2026-09-03",
           "2026-09-04",
           "2026-09-08",
@@ -416,10 +415,10 @@
           "2026-11-20",
           "2026-11-23",
           "2026-11-24",
-          "2026-11-25"
+          "2026-11-25",
+          "2026-11-26"
         ],
         "close": [
-          2.956,
           2.913,
           2.975,
           2.916,
@@ -478,10 +477,10 @@
           3.411,
           3.184,
           3.323,
-          3.648
+          3.269,
+          3.622
         ],
         "macd": [
-          0.01939,
           0.02233,
           0.02934,
           0.02978,
@@ -540,10 +539,10 @@
           0.09734,
           0.08754,
           0.08995,
-          0.11674
+          0.0865,
+          0.11098
         ],
         "signal": [
-          -0.01079,
           -0.00416,
           0.00254,
           0.00799,
@@ -602,10 +601,10 @@
           0.0634,
           0.06823,
           0.07257,
-          0.08141
+          0.07536,
+          0.08248
         ],
         "rsi": [
-          60.3,
           56.39,
           60.38,
           55.21,
@@ -664,18 +663,39 @@
           61.79,
           52.33,
           56.7,
-          64.82
+          54.61,
+          63.98
         ]
       },
-      "intel_pressure": 9.0
+      "intel_pressure": 7.0
     }
   ],
   "osint": {
-    "alert_count": 10,
-    "supply_pressure": 9,
+    "alert_count": 9,
+    "supply_pressure": 7,
     "ai_enabled": false,
     "ai_pressure": {},
     "alerts": [
+      {
+        "title": "Gibson: Tanker Day Rates for Hormuz Transits Remain Above $1 Million",
+        "link": "https://maritime-executive.com/article/gibson-tanker-day-rates-for-hormuz-transits-remain-above-1-million",
+        "source": "The Maritime Executive",
+        "keywords": [
+          "strait"
+        ],
+        "when": "2026-11-26 04:51",
+        "supply": true
+      },
+      {
+        "title": "Marine Corps Trials Portable 5G Network for Deployments",
+        "link": "https://news.usni.org/2026/11/25/marine-corps-trials-portable-5g-network-for-deployments",
+        "source": "USNI News",
+        "keywords": [
+          "deployment"
+        ],
+        "when": "2026-11-25 17:03",
+        "supply": false
+      },
       {
         "title": "Petronas Names ‘World's First’ Nearshore FLNG Facility",
         "link": "https://www.marinelink.com/news/petronas-names-worlds-first-nearshore-544579",
@@ -745,36 +765,6 @@
           "strait"
         ],
         "when": "2026-11-24 17:36",
-        "supply": true
-      },
-      {
-        "title": "Swedish Club Urges Ships to Avoid Strait of Hormuz as Security Situation Deteriorates",
-        "link": "https://gcaptain.com/swedish-club-urges-ships-to-avoid-strait-of-hormuz-as-security-situation-deteriorates/",
-        "source": "gCaptain",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-24 16:47",
-        "supply": true
-      },
-      {
-        "title": "Recon Marines Join Finnish Naval Exercise, Baltic NATO Naval Drills",
-        "link": "https://news.usni.org/2026/11/23/recon-marines-join-finnish-naval-exercise-baltic-nato-naval-drills",
-        "source": "USNI News",
-        "keywords": [
-          "naval drill"
-        ],
-        "when": "2026-11-23 18:22",
-        "supply": true
-      },
-      {
-        "title": "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
-        "link": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
-        "source": "USNI News",
-        "keywords": [
-          "strait"
-        ],
-        "when": "2026-11-23 15:29",
         "supply": true
       }
     ]
